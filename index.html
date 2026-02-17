@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boulder Street Real Estate | Woodland Park CO Homes & Mountain Properties</title>
+  <meta name="description" content="Boulder Street Real Estate — your Woodland Park, Colorado real estate expert. Buy or sell mountain homes in Teller County, Divide, Florissant & the Pikes Peak region. Call (405) 588-7650.">
+  <meta name="keywords" content="Woodland Park real estate, Woodland Park CO homes for sale, Teller County realtor, mountain homes Colorado, Divide CO real estate, Florissant CO homes">
+  <link rel="canonical" href="https://wpmountainhomes.com/">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Boulder Street Real Estate | Woodland Park CO">
+  <meta property="og:description" content="Mountain homes & real estate in Woodland Park, Divide, Florissant & Teller County. Your local expert for buying and selling in the Pikes Peak region.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Schema Markup: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Jonathan Dickey - Boulder Street Real Estate",
+    "telephone": "+1-405-588-7650",
+    "employee": {
+      "@type": "RealEstateAgent",
+      "name": "Jonathan Dickey"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Woodland Park",
+      "addressRegion": "CO",
+      "postalCode": "80863",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      "Woodland Park, CO",
+      "Divide, CO",
+      "Florissant, CO",
+      "Cripple Creek, CO",
+      "Green Mountain Falls, CO",
+      "Teller County, CO"
+    ],
+    "url": "https://wpmountainhomes.com",
+    "description": "Boulder Street Real Estate helps buyers and sellers navigate mountain real estate in Woodland Park, Teller County, and the Pikes Peak region of Colorado."
+  }
+  </script>
+
+  <!-- Schema Markup: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the average home price in Woodland Park, CO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The median home price in Woodland Park, CO is approximately $565,000–$650,000 depending on the season and property type. Prices range from around $200,000 for smaller cabins to over $1 million for custom mountain estates on acreage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far is Woodland Park from Colorado Springs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Woodland Park is approximately 18 miles (25–30 minutes) west of Colorado Springs via US Highway 24 through Ute Pass. Many residents commute to Colorado Springs for work while enjoying mountain living."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Woodland Park, CO a good place to live?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Woodland Park is known as the 'City Above the Clouds' at 8,465 feet elevation. It offers stunning Pikes Peak views, abundant outdoor recreation, a tight-knit community, excellent schools, low crime rates, and easy access to Colorado Springs. It's ideal for outdoor enthusiasts, remote workers, retirees, and families."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I know about buying a mountain home in Colorado?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mountain homes in Teller County often have well water and septic systems instead of city utilities. Buyers should also consider wildfire mitigation, snow removal, altitude adjustment, and whether the property has year-round road access. Working with a local mountain property expert is essential."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --forest: #2D4A3E;
+      --sage: #7A9E7E;
+      --sage-light: #B8D4BA;
+      --cream: #F5F0E8;
+      --warm-white: #FDFBF7;
+      --bark: #5C4033;
+      --bark-light: #8B6F5E;
+      --charcoal: #2C2C2C;
+      --gold: #C8A96E;
+      --gold-light: #E8D5AA;
+      --rust: #B85C38;
+      --sky: #A8C4D4;
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'Outfit', system-ui, sans-serif;
+      --font-accent: 'Caveat', cursive;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--charcoal);
+      background: var(--warm-white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ===== NOISE TEXTURE OVERLAY ===== */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(253, 251, 247, 0.92);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(45, 74, 62, 0.08);
+      transition: all 0.4s ease;
+    }
+
+    nav.scrolled {
+      box-shadow: 0 2px 30px rgba(0,0,0,0.06);
+    }
+
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: var(--forest);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .logo-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--cream);
+    }
+
+    .logo-text {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      color: var(--forest);
+      letter-spacing: -0.02em;
+    }
+
+    .logo-text span {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.6rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--bark-light);
+      margin-top: -2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--charcoal);
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      transition: color 0.3s;
+      position: relative;
+    }
+
+    .nav-links a:hover { color: var(--forest); }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--sage);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-cta {
+      background: var(--forest) !important;
+      color: var(--cream) !important;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      letter-spacing: 0.02em;
+      transition: all 0.3s ease !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--bark) !important;
+      transform: translateY(-1px);
+    }
+
+    .nav-cta::after { display: none !important; }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .mobile-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--charcoal);
+      margin: 6px 0;
+      transition: 0.3s;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      background: linear-gradient(165deg, var(--forest) 0%, #1a3a2e 40%, #2a3f35 100%);
+      overflow: hidden;
+    }
+
+    .hero-texture {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image:
+        radial-gradient(ellipse at 20% 80%, rgba(122, 158, 126, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(200, 169, 110, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 60% 60%, rgba(168, 196, 212, 0.08) 0%, transparent 40%);
+    }
+
+    /* Mountain silhouette */
+    .hero-mountains {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 35%;
+      opacity: 0.06;
+    }
+
+    .hero-mountains svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 120px 32px 80px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 100px;
+      padding: 8px 20px;
+      margin-bottom: 32px;
+      animation: fadeInUp 0.8s ease 0.2s both;
+    }
+
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--sage-light);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    .hero-badge span {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.8);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      color: var(--cream);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+      max-width: 780px;
+      animation: fadeInUp 0.8s ease 0.4s both;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--sage-light);
+      position: relative;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 540px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+      font-weight: 300;
+      animation: fadeInUp 0.8s ease 0.6s both;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.8s ease 0.8s both;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--charcoal);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(200, 169, 110, 0.3);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--cream);
+      border: 1.5px solid rgba(255,255,255,0.25);
+    }
+
+    .btn-outline:hover {
+      border-color: rgba(255,255,255,0.5);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      margin-top: 64px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      animation: fadeInUp 0.8s ease 1s both;
+    }
+
+    .hero-stat h3 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--gold);
+    }
+
+    .hero-stat p {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 500;
+    }
+
+    /* ===== SECTION STYLES ===== */
+    section {
+      padding: 100px 32px;
+    }
+
+    .section-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: var(--font-accent);
+      font-size: 1.2rem;
+      color: var(--sage);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--forest);
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--bark-light);
+      max-width: 600px;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    /* ===== AREAS WE SERVE ===== */
+    .areas {
+      background: var(--cream);
+    }
+
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 48px;
+    }
+
+    .area-card {
+      background: var(--warm-white);
+      border-radius: 12px;
+      padding: 32px;
+      border: 1px solid rgba(45, 74, 62, 0.06);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .area-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 0;
+      background: var(--sage);
+      transition: height 0.4s ease;
+      border-radius: 0 0 4px 0;
+    }
+
+    .area-card:hover::before { height: 100%; }
+
+    .area-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+    }
+
+    .area-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--forest);
+      margin-bottom: 8px;
+    }
+
+    .area-card p {
+      font-size: 0.9rem;
+      color: var(--bark-light);
+      line-height: 1.6;
+    }
+
+    .area-card .area-tag {
+      display: inline-block;
+      margin-top: 16px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--sage);
+    }
+
+    /* ===== ABOUT / WHY US ===== */
+    .about {
+      background: var(--warm-white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-top: 48px;
+    }
+
+    .about-features {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .about-feature {
+      display: flex;
+      gap: 20px;
+    }
+
+    .about-feature-icon {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      background: var(--cream);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-feature-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--forest);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .about-feature h4 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--forest);
+      margin-bottom: 4px;
+    }
+
+    .about-feature p {
+      font-size: 0.9rem;
+      color: var(--bark-light);
+      line-height: 1.6;
+    }
+
+    .about-image {
+      background: var(--cream);
+      border-radius: 16px;
+      aspect-ratio: 4/5;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-image-overlay {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;
+      background: rgba(45, 74, 62, 0.92);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+
+    .about-image-overlay p {
+      font-family: var(--font-accent);
+      font-size: 1.3rem;
+      color: var(--cream);
+      text-align: center;
+    }
+
+    .about-image-placeholder {
+      font-size: 4rem;
+      opacity: 0.15;
+    }
+
+    /* ===== MARKET STATS ===== */
+    .stats {
+      background: var(--forest);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stats::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse at 30% 50%, rgba(122, 158, 126, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 30%, rgba(200, 169, 110, 0.08) 0%, transparent 50%);
+    }
+
+    .stats .section-inner { position: relative; z-index: 2; }
+
+    .stats .section-label { color: var(--sage-light); }
+    .stats .section-title { color: var(--cream); }
+    .stats .section-desc { color: rgba(255,255,255,0.5); }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .stat-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .stat-card h3 {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .stat-card p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+    }
+
+    /* ===== FAQ (AI Search Optimized) ===== */
+    .faq {
+      background: var(--cream);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 48px;
+    }
+
+    .faq-item {
+      background: var(--warm-white);
+      border-radius: 12px;
+      padding: 32px;
+      border: 1px solid rgba(45, 74, 62, 0.06);
+    }
+
+    .faq-item h3 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--forest);
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .faq-item p {
+      font-size: 0.9rem;
+      color: var(--bark-light);
+      line-height: 1.7;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      background: var(--warm-white);
+      text-align: center;
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, var(--forest) 0%, #1a3a2e 100%);
+      border-radius: 20px;
+      padding: 80px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse at 20% 80%, rgba(122, 158, 126, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(200, 169, 110, 0.1) 0%, transparent 40%);
+    }
+
+    .cta-box > * { position: relative; z-index: 2; }
+
+    .cta-box .section-label { color: var(--sage-light); }
+
+    .cta-box h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--cream);
+      margin-bottom: 16px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.6);
+      max-width: 500px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+
+    .cta-phone {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      color: var(--gold);
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 16px;
+      transition: color 0.3s;
+    }
+
+    .cta-phone:hover { color: var(--gold-light); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--charcoal);
+      padding: 64px 32px 32px;
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-brand .logo-text {
+      color: var(--cream);
+      font-size: 1.2rem;
+    }
+
+    .footer-brand .logo-text span {
+      color: rgba(255,255,255,0.4);
+    }
+
+    .footer-brand p {
+      color: rgba(255,255,255,0.4);
+      font-size: 0.88rem;
+      margin-top: 16px;
+      max-width: 300px;
+      line-height: 1.6;
+    }
+
+    .footer-col h4 {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 20px;
+    }
+
+    .footer-col a {
+      display: block;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      transition: color 0.3s;
+    }
+
+    .footer-col a:hover { color: var(--sage-light); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 32px;
+    }
+
+    .footer-bottom p {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.25);
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .about-grid { grid-template-columns: 1fr; gap: 48px; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      section { padding: 72px 20px; }
+      .nav-links { display: none; }
+      .mobile-toggle { display: block; }
+      .hero-content { padding: 100px 20px 60px; }
+      .hero-stats { gap: 24px; flex-wrap: wrap; }
+      .areas-grid { grid-template-columns: 1fr; }
+      .faq-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+      .cta-box { padding: 48px 24px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2.2rem; }
+      .hero-actions { flex-direction: column; }
+      .btn { width: 100%; justify-content: center; }
+      .stats-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z"/></svg>
+        </div>
+        <div class="logo-text">
+          Boulder Street
+          <span>Jonathan Dickey &bull; Woodland Park</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#areas">Areas</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#market">Market</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="tel:4055887650" class="nav-cta">Call (405) 588-7650</a></li>
+      </ul>
+
+      <button class="mobile-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-texture"></div>
+    <div class="hero-mountains">
+      <svg viewBox="0 0 1440 400" preserveAspectRatio="none">
+        <path fill="rgba(255,255,255,0.5)" d="M0,400 L0,280 L120,200 L240,260 L360,180 L480,240 L600,140 L720,220 L840,120 L960,200 L1080,100 L1200,180 L1320,160 L1440,200 L1440,400 Z"/>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        <span>Woodland Park, Colorado</span>
+      </div>
+      <h1>Find Your Place<br>in the <em>Mountains</em></h1>
+      <p class="hero-sub">Jonathan Dickey and Boulder Street Real Estate help you buy, sell, and discover mountain living in Woodland Park, Teller County, and the Pikes Peak region.</p>
+      <div class="hero-actions">
+        <a href="https://jonathan.poweredbyflourish.com/" class="btn btn-primary" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Search Homes
+        </a>
+        <a href="tel:4055887650" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (405) 588-7650
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <h3>8,465'</h3>
+          <p>Elevation</p>
+        </div>
+        <div class="hero-stat">
+          <h3>18 mi</h3>
+          <p>To CO Springs</p>
+        </div>
+        <div class="hero-stat">
+          <h3>$565K</h3>
+          <p>Median Price</p>
+        </div>
+        <div class="hero-stat">
+          <h3>300+</h3>
+          <p>Sunny Days/Year</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AREAS WE SERVE ===== -->
+  <section class="areas" id="areas">
+    <div class="section-inner">
+      <div class="section-label fade-in">Where we roam</div>
+      <h2 class="section-title fade-in">Mountain Communities We Serve</h2>
+      <p class="section-desc fade-in">From the heart of Woodland Park to the quiet meadows of Florissant — we know every trail, every neighborhood, every hidden gem in Teller County.</p>
+
+      <div class="areas-grid">
+        <a href="#" class="area-card fade-in">
+          <h3>Woodland Park</h3>
+          <p>The City Above the Clouds. Stunning Pikes Peak views, vibrant downtown, excellent schools, and easy access to Colorado Springs. The hub of Teller County living.</p>
+          <span class="area-tag">Primary Market →</span>
+        </a>
+        <a href="#" class="area-card fade-in">
+          <h3>Divide</h3>
+          <p>Just west of Woodland Park with larger lots, peaceful meadows, and proximity to Mueller State Park. Perfect for those who want a little more space and solitude.</p>
+          <span class="area-tag">Explore Divide →</span>
+        </a>
+        <a href="#" class="area-card fade-in">
+          <h3>Florissant</h3>
+          <p>Home to the Florissant Fossil Beds National Monument. Ranch properties, acreage, and a true off-the-beaten-path mountain lifestyle with unbeatable stargazing.</p>
+          <span class="area-tag">Explore Florissant →</span>
+        </a>
+        <a href="#" class="area-card fade-in">
+          <h3>Cripple Creek & Victor</h3>
+          <p>Historic gold mining towns with character to spare. Affordable mountain properties with a rich history and growing community just south of Woodland Park.</p>
+          <span class="area-tag">Explore CC & Victor →</span>
+        </a>
+        <a href="#" class="area-card fade-in">
+          <h3>Green Mountain Falls</h3>
+          <p>A charming, artsy mountain village between Woodland Park and Manitou Springs. Cozy cabins, a gazebo lake, and a tight-knit creative community.</p>
+          <span class="area-tag">Explore GMF →</span>
+        </a>
+        <a href="#" class="area-card fade-in">
+          <h3>Cascade & Chipita Park</h3>
+          <p>Nestled along Fountain Creek on the Ute Pass corridor. Mountain retreat living that's halfway between Woodland Park and Colorado Springs.</p>
+          <span class="area-tag">Explore Cascade →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / WHY US ===== -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div>
+          <div class="section-label fade-in">Why Boulder Street</div>
+          <h2 class="section-title fade-in">Mountain Properties Need a Mountain Expert</h2>
+          <p class="section-desc fade-in" style="margin-bottom: 40px;">Buying or selling in the mountains isn't the same as the city. Well water, septic systems, wildfire mitigation, altitude considerations, seasonal road access — you need someone who lives it every day.</p>
+
+          <div class="about-features">
+            <div class="about-feature fade-in">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Local to the Core</h4>
+                <p>Jonathan Dickey is based right here in Woodland Park. He knows every neighborhood, every street, every hidden pocket of Teller County because he lives here too.</p>
+              </div>
+            </div>
+            <div class="about-feature fade-in">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div>
+                <h4>Mountain Property Expertise</h4>
+                <p>Well & septic inspections, wildfire defensible space, altitude building codes, seasonal access — we guide you through what makes mountain real estate unique.</p>
+              </div>
+            </div>
+            <div class="about-feature fade-in">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <h4>Relocation Friendly</h4>
+                <p>Whether you're moving from Colorado Springs, out of state, or retiring to the mountains — we make the transition smooth and stress-free.</p>
+              </div>
+            </div>
+            <div class="about-feature fade-in">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div>
+                <h4>Market Data Driven</h4>
+                <p>Monthly market reports, real-time pricing data, and honest assessments. No guesswork — just clear information to make confident decisions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image fade-in">
+          <div class="about-image-placeholder">🏔️</div>
+          <div class="about-image-overlay">
+            <p>"Your trail to home starts here."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARKET STATS ===== -->
+  <section class="stats" id="market">
+    <div class="section-inner">
+      <div class="section-label fade-in">Woodland Park Market</div>
+      <h2 class="section-title fade-in">Know Your Market</h2>
+      <p class="section-desc fade-in">Real data for real decisions. Here's a snapshot of the Woodland Park, CO real estate market.</p>
+
+      <div class="stats-grid">
+        <div class="stat-card fade-in">
+          <h3>$565K</h3>
+          <p>Median Home Price</p>
+        </div>
+        <div class="stat-card fade-in">
+          <h3>7,920</h3>
+          <p>Population</p>
+        </div>
+        <div class="stat-card fade-in">
+          <h3>45</h3>
+          <p>Avg Days on Market</p>
+        </div>
+        <div class="stat-card fade-in">
+          <h3>8,465'</h3>
+          <p>Elevation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAILS & OUTDOOR LIVING ===== -->
+  <section class="areas" id="trails">
+    <div class="section-inner">
+      <div class="section-label fade-in">Life Outside</div>
+      <h2 class="section-title fade-in">Trails & Outdoor Recreation</h2>
+      <p class="section-desc fade-in">One of the biggest reasons people move to Woodland Park: world-class hiking, biking, and outdoor adventure right from your doorstep.</p>
+
+      <div class="areas-grid">
+        <a href="trails/crags-trail.html" class="area-card fade-in">
+          <h3>The Crags Trail</h3>
+          <p>A 5-mile moderate hike to dramatic granite pinnacles on the shoulders of Pikes Peak. Wildflower meadows, creek crossings, and 360° summit views. Family friendly.</p>
+          <span class="area-tag">Divide · 5 mi · Moderate →</span>
+        </a>
+        <a href="trails/raspberry-mountain.html" class="area-card fade-in">
+          <h3>Raspberry Mountain</h3>
+          <p>Known as "the sleeping giant," this summit delivers stunning views of the Front Range, Sangre de Cristos, and Pikes Peak. A local favorite year-round.</p>
+          <span class="area-tag">Divide · 5 mi · Moderate →</span>
+        </a>
+        <a href="trails/avenger-open-space.html" class="area-card fade-in">
+          <h3>Avenger Open Space</h3>
+          <p>Woodland Park's newest 120-acre open space, acquired in 2024. Meadows, aspen groves, and Pikes Peak views — a true community treasure.</p>
+          <span class="area-tag">Woodland Park · Easy-Moderate →</span>
+        </a>
+        <a href="trails/lovell-gulch.html" class="area-card fade-in">
+          <h3>Lovell Gulch</h3>
+          <p>A peaceful 5.2-mile loop through Pike National Forest, just minutes from downtown Woodland Park. Creek crossings, ridge views, and little caves to explore.</p>
+          <span class="area-tag">Woodland Park · 5.2 mi · Moderate →</span>
+        </a>
+        <a href="trails/manitou-lake.html" class="area-card fade-in">
+          <h3>Manitou Lake</h3>
+          <p>A serene 2.5-mile lakeside loop off Highway 67. Perfect for families, fishing, and birdwatching with Pikes Peak as your backdrop.</p>
+          <span class="area-tag">Hwy 67 · 2.5 mi · Easy →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AIRBNB / STR SECTION ===== -->
+  <section class="about" id="str">
+    <div class="section-inner">
+      <div class="section-label fade-in">Local Insight</div>
+      <h2 class="section-title fade-in">Short-Term Rentals in Woodland Park: What You Need to Know</h2>
+      <p class="section-desc fade-in" style="max-width: 800px; margin-bottom: 32px;">If you're considering an investment property or Airbnb in Woodland Park, the regulatory landscape has changed dramatically. Here's the full picture.</p>
+
+      <div class="faq-grid">
+        <div class="faq-item fade-in">
+          <h3>What Happened?</h3>
+          <p>In December 2023, Woodland Park voters overwhelmingly passed a citizens' initiative (1,347 to 947) that restricts short-term rentals to owner-occupied properties only in residential zones. Non-owner-occupied STRs are only permitted in commercially zoned areas. The ordinance was set to take effect December 31, 2024.</p>
+        </div>
+        <div class="faq-item fade-in">
+          <h3>The Lawsuit</h3>
+          <p>Property owners — including out-of-state investors and local STR operators — filed suit against the city, arguing the ordinance violates constitutional property rights. A key issue: the new rules do not grandfather in existing licensed STR properties, which is unusual. As of early 2025, the city delayed enforcement while legal challenges continue.</p>
+        </div>
+        <div class="faq-item fade-in">
+          <h3>Impact on Property Owners</h3>
+          <p>Over 150 short-term rental properties could be affected. Some owners report potential annual revenue losses of $45,000–$65,000. Many former STR hosts are pivoting to medium-term rentals (30+ day stays) as an alternative strategy.</p>
+        </div>
+        <div class="faq-item fade-in">
+          <h3>What This Means for Buyers & Sellers</h3>
+          <p>If you're buying property in Woodland Park as an STR investment, proceed with caution and understand the current regulations. If you're selling an existing STR property, we can help you navigate the changing landscape and find the right buyer. Contact us for the latest updates on this evolving situation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ (AI Search Optimized) ===== -->
+  <section class="faq" id="faq">
+    <div class="section-inner">
+      <div class="section-label fade-in">Common Questions</div>
+      <h2 class="section-title fade-in">Frequently Asked Questions About Woodland Park Real Estate</h2>
+      <p class="section-desc fade-in">Everything you need to know about buying, selling, and living in the mountains.</p>
+
+      <div class="faq-grid">
+        <div class="faq-item fade-in">
+          <h3>What is the average home price in Woodland Park, CO?</h3>
+          <p>The median home price in Woodland Park is approximately $565,000–$650,000 depending on the season and property type. Prices range from around $200,000 for smaller cabins to over $1 million for custom mountain estates on acreage. The market has seen steady appreciation as more remote workers and retirees discover mountain living.</p>
+        </div>
+        <div class="faq-item fade-in">
+          <h3>How far is Woodland Park from Colorado Springs?</h3>
+          <p>Woodland Park is approximately 18 miles (25–30 minutes) west of Colorado Springs via US Highway 24 through Ute Pass. Many residents commute to Colorado Springs for work, shopping, and healthcare while enjoying the peace of mountain living. The drive is scenic but can be slower during winter storms or summer tourist season.</p>
+        </div>
+        <div class="faq-item fade-in">
+          <h3>Is Woodland Park a good place to live?</h3>
+          <p>Woodland Park is known as the "City Above the Clouds" at 8,465 feet elevation. It offers stunning Pikes Peak views, 300+ sunny days per year, excellent schools (RE-2 district), low crime, a vibrant downtown, and world-class outdoor recreation. It's especially popular with families, remote workers, military retirees, and outdoor enthusiasts.</p>
+        </div>
+        <div class="faq-item fade-in">
+          <h3>What should I know about buying a mountain home?</h3>
+          <p>Mountain properties in Teller County often have well water and septic systems instead of city utilities. Key considerations include wildfire mitigation and defensible space, snow removal access, altitude adjustment (8,000+ feet), year-round road access, and utility infrastructure. A local mountain property expert is essential to navigate these unique factors.</p>
+        </div>
+        <div class="faq-item fade-in">
+          <h3>What are the best neighborhoods in Woodland Park?</h3>
+          <p>Popular subdivisions include Paradise Estates (easy highway access, diverse home styles), Westwood Lakes (small lakeside community), Sunnywood Manor (larger homes, north end), and The Reserve at Tamarac (newer construction). Each neighborhood offers different lot sizes, views, and proximity to downtown or outdoor recreation.</p>
+        </div>
+        <div class="faq-item fade-in">
+          <h3>Can I have an Airbnb in Woodland Park?</h3>
+          <p>Short-term rental regulations changed significantly in 2023-2024. Voters passed restrictions limiting STRs to owner-occupied properties in residential zones. Non-owner-occupied vacation rentals are only allowed in commercial zones. Legal challenges are ongoing, so consult us for the latest updates before purchasing an investment property.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta" id="contact">
+    <div class="section-inner">
+      <div class="cta-box">
+        <div class="section-label">Let's talk</div>
+        <h2>Ready to Find Your Mountain Home?</h2>
+        <p>Whether you're buying your first mountain property, selling your Woodland Park home, or just exploring the area — we're here to help.</p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a href="tel:4055887650" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (405) 588-7650
+          </a>
+          <a href="mailto:jonathan@wpmountainhomes.com" class="btn btn-outline" style="border-color: rgba(255,255,255,0.25); color: var(--cream);">
+            Email Jonathan
+          </a>
+        </div>
+        <a href="tel:4055887650" class="cta-phone">(405) 588-7650</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">
+            Boulder Street
+            <span>Real Estate &bull; Woodland Park, CO</span>
+          </div>
+          <p>Jonathan Dickey — your local mountain real estate expert in Woodland Park, Teller County, and the Pikes Peak region of Colorado. Brokered by Real Broker, LLC.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Areas</h4>
+          <a href="areas/woodland-park.html">Woodland Park</a>
+          <a href="areas/divide.html">Divide</a>
+          <a href="areas/florissant.html">Florissant</a>
+          <a href="areas/cripple-creek.html">Cripple Creek</a>
+          <a href="areas/green-mountain-falls.html">Green Mtn Falls</a>
+          <a href="areas/cascade.html">Cascade</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Neighborhoods</h4>
+          <a href="neighborhoods/paradise-estates.html">Paradise Estates</a>
+          <a href="neighborhoods/westwood-lakes.html">Westwood Lakes</a>
+          <a href="neighborhoods/sunnywood-manor.html">Sunnywood Manor</a>
+          <a href="neighborhoods/tamarac.html">The Reserve at Tamarac</a>
+          <a href="neighborhoods/paint-pony-ranch.html">Paint Pony Ranch</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="#trails">Trail Guides</a>
+          <a href="#str">STR/Airbnb Guide</a>
+          <a href="#faq">FAQ</a>
+          <a href="#market">Market Data</a>
+          <a href="tel:4055887650">(405) 588-7650</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Jonathan Dickey, Boulder Street Real Estate. Brokered by Real Broker, LLC. All rights reserved. Woodland Park, CO 80863.</p>
+        <p>Equal Housing Opportunity</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
