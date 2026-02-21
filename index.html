@@ -271,7 +271,8 @@
       display: flex;
       align-items: center;
       position: relative;
-      background: linear-gradient(165deg, var(--forest) 0%, #1a3a2e 40%, #2a3f35 100%);
+      background: linear-gradient(165deg, rgba(45,74,62,0.82) 0%, rgba(26,58,46,0.78) 40%, rgba(42,63,53,0.75) 100%),
+        url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_nkgpoknkgpoknkgp.png-RLJC3spFR3SysJA1T9wrxu87uKIYtZ.jpeg') center/cover no-repeat;
       overflow: hidden;
     }
 
@@ -506,6 +507,14 @@
       box-shadow: 0 12px 40px rgba(0,0,0,0.06);
     }
 
+    .area-card-img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
     .area-card h3 {
       font-family: var(--font-display);
       font-size: 1.3rem;
@@ -598,6 +607,15 @@
       justify-content: center;
     }
 
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
     .about-image-overlay {
       position: absolute;
       bottom: 24px;
@@ -621,11 +639,81 @@
       opacity: 0.15;
     }
 
+    /* ===== PHOTO GALLERY ===== */
+    .gallery {
+      background: var(--cream);
+      padding: 100px 32px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 280px 280px;
+      gap: 16px;
+      margin-top: 48px;
+    }
+
+    .gallery-item {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-item:first-child {
+      grid-row: 1 / 3;
+    }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.6));
+      color: var(--cream);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 240px 240px 240px;
+      }
+      .gallery-item:first-child {
+        grid-column: 1 / 3;
+        grid-row: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 200px);
+      }
+      .gallery-item:first-child {
+        grid-column: auto;
+      }
+    }
+
     /* ===== MARKET STATS ===== */
     .stats {
       background: var(--forest);
       position: relative;
       overflow: hidden;
+      background: linear-gradient(165deg, rgba(45,74,62,0.9) 0%, rgba(26,58,46,0.88) 100%),
+        url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_nr9qffnr9qffnr9q.png-ZaoEcYHlnBDPiuvN7A7y9lPfDz43gB.jpeg') center/cover no-repeat;
     }
 
     .stats::before {
@@ -713,7 +801,8 @@
     }
 
     .cta-box {
-      background: linear-gradient(135deg, var(--forest) 0%, #1a3a2e 100%);
+      background: linear-gradient(135deg, rgba(45,74,62,0.88) 0%, rgba(26,58,46,0.9) 100%),
+        url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_oufmy3oufmy3oufm.png-EJZf1SoXXao0mvJpLetDvp4KY9gOjj.jpeg') center/cover no-repeat;
       border-radius: 20px;
       padding: 80px 48px;
       position: relative;
@@ -969,31 +1058,37 @@
 
       <div class="areas-grid">
         <a href="#" class="area-card fade-in">
+          <img class="area-card-img" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_nkgpoknkgpoknkgp.png-RLJC3spFR3SysJA1T9wrxu87uKIYtZ.jpeg" alt="Aerial view of Woodland Park at sunset with Pikes Peak" loading="lazy">
           <h3>Woodland Park</h3>
           <p>The City Above the Clouds. Stunning Pikes Peak views, vibrant downtown, excellent schools, and easy access to Colorado Springs. The hub of Teller County living.</p>
           <span class="area-tag">Primary Market →</span>
         </a>
         <a href="#" class="area-card fade-in">
+          <img class="area-card-img" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_pbf7rppbf7rppbf7.png-TSrX523HLL7mq0YZT0WEhIuIDCjFJ0.jpeg" alt="Wildflower meadow in Divide, Colorado" loading="lazy">
           <h3>Divide</h3>
           <p>Just west of Woodland Park with larger lots, peaceful meadows, and proximity to Mueller State Park. Perfect for those who want a little more space and solitude.</p>
           <span class="area-tag">Explore Divide →</span>
         </a>
         <a href="#" class="area-card fade-in">
+          <img class="area-card-img" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_46mx0l46mx0l46mx.png-v0yGrsLID68Beksd72qwiI3C9vTuZF.jpeg" alt="Ranch properties and mountain views in Florissant, Colorado" loading="lazy">
           <h3>Florissant</h3>
           <p>Home to the Florissant Fossil Beds National Monument. Ranch properties, acreage, and a true off-the-beaten-path mountain lifestyle with unbeatable stargazing.</p>
           <span class="area-tag">Explore Florissant →</span>
         </a>
         <a href="#" class="area-card fade-in">
+          <img class="area-card-img" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_8h35tg8h35tg8h35.png-i4lTUTNeTCOHEiEUGkbUY1D7izqGK0.jpeg" alt="Historic downtown Cripple Creek, Colorado with mountain backdrop" loading="lazy">
           <h3>Cripple Creek & Victor</h3>
           <p>Historic gold mining towns with character to spare. Affordable mountain properties with a rich history and growing community just south of Woodland Park.</p>
           <span class="area-tag">Explore CC & Victor →</span>
         </a>
         <a href="#" class="area-card fade-in">
+          <img class="area-card-img" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_2svfpr2svfpr2svf.png-1ZDYWl84MNXeQf9hbgEQ3fpiNlgqBq.jpeg" alt="Pine forest with mountain peaks near Green Mountain Falls" loading="lazy">
           <h3>Green Mountain Falls</h3>
           <p>A charming, artsy mountain village between Woodland Park and Manitou Springs. Cozy cabins, a gazebo lake, and a tight-knit creative community.</p>
           <span class="area-tag">Explore GMF →</span>
         </a>
         <a href="#" class="area-card fade-in">
+          <img class="area-card-img" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_5408u75408u75408%20%281%29.png-Ff1hQn5R7mlQJQRcnt0xw8998gg7LB.jpeg" alt="Forest trails and mountain scenery near Cascade and Chipita Park" loading="lazy">
           <h3>Cascade & Chipita Park</h3>
           <p>Nestled along Fountain Creek on the Ute Pass corridor. Mountain retreat living that's halfway between Woodland Park and Colorado Springs.</p>
           <span class="area-tag">Explore Cascade →</span>
@@ -1052,10 +1147,42 @@
         </div>
 
         <div class="about-image fade-in">
-          <div class="about-image-placeholder">🏔️</div>
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/profile%20Pic-e56gY2tRPxlOx8EudHRgwtCjyf31zu.jpg" alt="Jonathan Dickey, Boulder Street Real Estate agent in Woodland Park, Colorado" loading="lazy">
           <div class="about-image-overlay">
             <p>"Your trail to home starts here."</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PHOTO GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="section-inner">
+      <div class="section-label fade-in">Life in Woodland Park</div>
+      <h2 class="section-title fade-in">Mountain Living at Its Finest</h2>
+      <p class="section-desc fade-in">From golden-hour meadows to pine-covered trails, Woodland Park offers a lifestyle unlike anywhere else on the Front Range.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_gpdhn3gpdhn3gpdh.png-ABzxq48pdYHyXfFgRjLVbFr3EP7BzX.jpeg" alt="Panoramic mountain vista with dramatic clouds and lake view near Woodland Park, Colorado" loading="lazy">
+          <div class="gallery-caption">Mountain vistas and dramatic skies above Teller County</div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_pbf7rppbf7rppbf7.png-TSrX523HLL7mq0YZT0WEhIuIDCjFJ0.jpeg" alt="Wildflower meadow with yellow flowers and evergreen trees in Woodland Park, Colorado" loading="lazy">
+          <div class="gallery-caption">Wildflower meadows in summer</div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_46mx0l46mx0l46mx.png-v0yGrsLID68Beksd72qwiI3C9vTuZF.jpeg" alt="Mountain ranch town at 9,000 feet with horses grazing and Pikes Peak in background" loading="lazy">
+          <div class="gallery-caption">Ranch life at 9,000 feet</div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_oufmy3oufmy3oufm.png-EJZf1SoXXao0mvJpLetDvp4KY9gOjj.jpeg" alt="Rustic log cabin surrounded by wildflowers and aspen trees near Woodland Park" loading="lazy">
+          <div class="gallery-caption">Cabin living among the aspens</div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_8h35tg8h35tg8h35.png-i4lTUTNeTCOHEiEUGkbUY1D7izqGK0.jpeg" alt="Historic downtown mountain town with brick buildings and pine-covered hills near Woodland Park area" loading="lazy">
+          <div class="gallery-caption">Small-town charm in the Pikes Peak region</div>
         </div>
       </div>
     </div>
