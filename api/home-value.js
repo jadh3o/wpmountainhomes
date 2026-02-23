@@ -27,26 +27,49 @@ export default async function handler(req, res) {
     timestamp: new Date().toISOString(),
   };
 
-  // Forward to webhook if configured
-  const webhookUrl = process.env.HOME_VALUE_WEBHOOK_URL;
-  if (webhookUrl) {
-    try {
-      const webhookRes = await fetch(webhookUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(leadData),
-      });
+  // Send email via Resend
+  const resendKey = process.env.RESEND_API_KEY;
+  const toEmail = process.env.LEAD_EMAIL || 'jonathan@wpmountainhomes.com';
 
-      if (!webhookRes.ok) {
-        console.error('Webhook responded with status:', webhookRes.status);
-      }
-    } catch (err) {
-      // Log but don't fail the request — still confirm to the user
-      console.error('Webhook delivery failed:', err.message);
-    }
+  if (!resendKey) {
+    console.error('RESEND_API_KEY is not set');
+    return res.status(500).json({ error: 'Email service not configured.' });
   }
 
-  // Always log to Vercel function logs for visibility
+  try {
+    const emailRes = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${resendKey}`,
+      },
+      body: JSON.stringify({
+        from: 'WP Mountain Homes <onboarding@resend.dev>',
+        to: [toEmail],
+        subject: `Home Value Request: ${leadData.address}`,
+        html: `
+          <h2>New Home Value Request</h2>
+          <table style="border-collapse:collapse;font-family:sans-serif;font-size:14px;">
+            <tr><td style="padding:8px 16px 8px 0;font-weight:bold;color:#2D4A3E;">Property</td><td style="padding:8px 0;">${leadData.address}</td></tr>
+            <tr><td style="padding:8px 16px 8px 0;font-weight:bold;color:#2D4A3E;">Name</td><td style="padding:8px 0;">${leadData.name}</td></tr>
+            <tr><td style="padding:8px 16px 8px 0;font-weight:bold;color:#2D4A3E;">Email</td><td style="padding:8px 0;"><a href="mailto:${leadData.email}">${leadData.email}</a></td></tr>
+            <tr><td style="padding:8px 16px 8px 0;font-weight:bold;color:#2D4A3E;">Phone</td><td style="padding:8px 0;">${leadData.phone || 'Not provided'}</td></tr>
+            <tr><td style="padding:8px 16px 8px 0;font-weight:bold;color:#2D4A3E;">Submitted</td><td style="padding:8px 0;">${new Date(leadData.timestamp).toLocaleString('en-US', { timeZone: 'America/Denver' })}</td></tr>
+          </table>
+        `,
+      }),
+    });
+
+    if (!emailRes.ok) {
+      const errBody = await emailRes.text();
+      console.error('Resend error:', emailRes.status, errBody);
+      return res.status(500).json({ error: 'Failed to send notification email.' });
+    }
+  } catch (err) {
+    console.error('Email delivery failed:', err.message);
+    return res.status(500).json({ error: 'Failed to send notification email.' });
+  }
+
   console.log('HOME VALUE LEAD:', JSON.stringify(leadData));
 
   return res.status(200).json({ success: true });
