@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Coffee Shops in Woodland Park, CO | Local Guide by Jonathan Dickey</title>
+  <meta name="description" content="Discover the best coffee shops in Woodland Park, CO. From cozy mountain cabins to European bakeries and Pikes Peak views. A local guide by Woodland Park realtor Jonathan Dickey.">
+  <meta name="keywords" content="coffee shops Woodland Park CO, best coffee Woodland Park Colorado, cafes Woodland Park, coffee near me Woodland Park CO">
+  <link rel="canonical" href="https://wpmountainhomes.com/coffee-shops/">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #2D4A3E;
+      --sage: #7A9E7E;
+      --gold: #C8A96E;
+      --cream: #FAF6F0;
+      --warm-white: #FEFCF9;
+      --charcoal: #2C2C2C;
+      --bark-light: #8B7B6B;
+      --font-display: 'DM Serif Display', serif;
+      --font-body: 'Outfit', sans-serif;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--font-body); color: var(--charcoal); background: var(--warm-white); }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(254,252,249,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(45,74,62,0.08); padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: var(--font-display); font-size: 1.15rem; color: var(--forest); }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a { font-size: 0.82rem; font-weight: 500; letter-spacing: 0.04em; color: var(--forest); opacity: 0.7; transition: opacity 0.3s; }
+    .nav-links a:hover { opacity: 1; }
+
+    /* HERO */
+    .hero { padding: 140px 40px 80px; background: linear-gradient(135deg, var(--forest) 0%, #1a332a 100%); text-align: center; }
+    .hero-breadcrumb { font-size: 0.78rem; color: var(--sage); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
+    .hero-breadcrumb a { color: var(--sage); opacity: 0.7; transition: opacity 0.3s; }
+    .hero-breadcrumb a:hover { opacity: 1; }
+    .hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 4.5vw, 3rem); color: var(--cream); margin-bottom: 16px; line-height: 1.2; }
+    .hero p { font-size: 1.05rem; color: rgba(250,246,240,0.7); max-width: 620px; margin: 0 auto; line-height: 1.7; font-weight: 300; }
+
+    /* SHOP CARDS */
+    .shops-section { padding: 80px 40px; max-width: 960px; margin: 0 auto; }
+    .shops-section > h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--forest); text-align: center; margin-bottom: 12px; }
+    .shops-section > p { text-align: center; color: var(--bark-light); font-size: 0.95rem; line-height: 1.7; max-width: 560px; margin: 0 auto 48px; font-weight: 300; }
+
+    .shop-card { display: flex; gap: 32px; align-items: flex-start; background: var(--warm-white); border: 1px solid rgba(45,74,62,0.08); border-radius: 14px; padding: 32px; margin-bottom: 24px; transition: transform 0.3s, box-shadow 0.3s; }
+    .shop-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(45,74,62,0.08); }
+
+    .shop-rank { flex-shrink: 0; width: 48px; height: 48px; background: var(--forest); color: var(--cream); font-family: var(--font-display); font-size: 1.3rem; border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+
+    .shop-info { flex: 1; }
+    .shop-info h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--forest); margin-bottom: 4px; }
+    .shop-info h3 a { color: var(--forest); transition: color 0.3s; }
+    .shop-info h3 a:hover { color: var(--gold); }
+    .shop-meta { font-size: 0.82rem; color: var(--bark-light); margin-bottom: 10px; display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; }
+    .shop-rating { color: var(--gold); font-weight: 600; }
+    .shop-info p { font-size: 0.92rem; color: var(--charcoal); line-height: 1.65; font-weight: 300; margin-bottom: 12px; }
+    .shop-link { font-size: 0.82rem; font-weight: 600; color: var(--gold); letter-spacing: 0.06em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 6px; transition: gap 0.3s; }
+    .shop-link:hover { gap: 10px; }
+
+    /* MAP SECTION */
+    .map-section { padding: 60px 40px 80px; max-width: 960px; margin: 0 auto; }
+    .map-section h2 { font-family: var(--font-display); font-size: 1.5rem; color: var(--forest); text-align: center; margin-bottom: 12px; }
+    .map-section > p { text-align: center; color: var(--bark-light); font-size: 0.9rem; margin-bottom: 32px; font-weight: 300; }
+    .map-embed { border-radius: 14px; overflow: hidden; border: 1px solid rgba(45,74,62,0.08); }
+    .map-embed iframe { width: 100%; height: 400px; border: 0; }
+
+    /* FAQ */
+    .faq-section { padding: 80px 40px; background: var(--cream); }
+    .faq-inner { max-width: 720px; margin: 0 auto; }
+    .faq-inner h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--forest); text-align: center; margin-bottom: 40px; }
+    .faq-item { border-bottom: 1px solid rgba(45,74,62,0.1); padding: 20px 0; }
+    .faq-item:first-of-type { border-top: 1px solid rgba(45,74,62,0.1); }
+    .faq-q { font-family: var(--font-body); font-weight: 600; font-size: 1rem; color: var(--forest); margin-bottom: 8px; }
+    .faq-a { font-size: 0.92rem; color: var(--charcoal); line-height: 1.7; font-weight: 300; }
+
+    /* CTA */
+    .cta-section { padding: 80px 40px; background: var(--forest); text-align: center; }
+    .cta-section h2 { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2rem); color: var(--cream); margin-bottom: 12px; }
+    .cta-section p { color: rgba(250,246,240,0.7); font-size: 0.95rem; max-width: 500px; margin: 0 auto 28px; line-height: 1.7; font-weight: 300; }
+    .cta-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-family: var(--font-body); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; border: none; }
+    .btn-primary { background: var(--gold); color: var(--forest); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,169,110,0.3); }
+    .btn-outline { border: 1.5px solid rgba(250,246,240,0.3); color: var(--cream); background: transparent; }
+    .btn-outline:hover { border-color: var(--cream); transform: translateY(-2px); }
+
+    /* FOOTER */
+    .footer { padding: 40px; text-align: center; border-top: 1px solid rgba(45,74,62,0.08); }
+    .footer p { font-size: 0.78rem; color: var(--bark-light); }
+    .footer a { color: var(--forest); font-weight: 500; }
+
+    /* INTERNAL LINKS */
+    .internal-links { padding: 60px 40px; max-width: 960px; margin: 0 auto; }
+    .internal-links h3 { font-family: var(--font-display); font-size: 1.2rem; color: var(--forest); text-align: center; margin-bottom: 20px; }
+    .internal-links-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .internal-links-grid a { font-size: 0.82rem; font-weight: 500; color: var(--forest); background: var(--cream); padding: 8px 16px; border-radius: 6px; transition: background 0.3s, color 0.3s; }
+    .internal-links-grid a:hover { background: var(--forest); color: var(--cream); }
+
+    @media (max-width: 768px) {
+      .nav { padding: 14px 20px; }
+      .nav-links { display: none; }
+      .hero { padding: 120px 20px 60px; }
+      .shops-section, .map-section, .internal-links { padding-left: 20px; padding-right: 20px; }
+      .faq-section, .cta-section { padding-left: 20px; padding-right: 20px; }
+      .shop-card { flex-direction: column; gap: 16px; padding: 24px; }
+      .shop-rank { width: 40px; height: 40px; font-size: 1.1rem; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are the best coffee shops in Woodland Park, CO?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The best coffee shops in Woodland Park, CO include Solid Grounds Coffee Roasters (4.9 stars), Java Haus (4.8 stars), Cafe Leo (4.6 stars), and the Starbucks on Highway 24 which has arguably the best outdoor patio of any Starbucks in America with Pikes Peak views." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there coffee shops in Woodland Park with free WiFi for remote work?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Java Haus at 116 W Midland Ave is especially popular for remote work with tons of indoor seating, free WiFi, and a separate meeting room. Cafe Leo and Solid Grounds also offer comfortable workspaces." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Woodland Park coffee shop has the best food?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cafe Leo is known for its Norwegian Sweet Buns, spicy avo bagel, and pesto turkey sandwich. Solid Grounds has amazing breakfast burritos and homemade coffee cake. Java Haus is famous for blueberry muffins and cheese danishes." }
+      },
+      {
+        "@type": "Question",
+        "name": "What coffee shops in Woodland Park open earliest?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cafe Leo opens earliest at 6AM daily. Java Haus and Solid Grounds both open at 7AM (Solid Grounds opens at 8AM on Sundays)." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Woodland Park, CO a good place to live for coffee lovers?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Woodland Park has a thriving local coffee scene with multiple independent shops, all within walking distance along Midland Avenue. Combined with mountain views, clean air, and a tight-knit community, it is one of the best small-town coffee towns in Colorado. Contact Jonathan Dickey at (405) 588-7650 to explore homes in Woodland Park." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-logo">WP Mountain Homes</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/coffee-shops/">Coffee Guide</a>
+      <a href="tel:4055887650">(405) 588-7650</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-breadcrumb"><a href="/">Home</a> &mdash; Coffee Shops</div>
+    <h1>Best Coffee Shops in Woodland Park, CO</h1>
+    <p>A local guide to the coffee shops that make Woodland Park feel like home. From cozy mountain cabins to European bakeries and the most scenic Starbucks patio in America.</p>
+  </section>
+
+  <!-- SHOP CARDS -->
+  <section class="shops-section">
+    <h2>The Local Coffee Guide</h2>
+    <p>Four spots that define Woodland Park's coffee culture, ranked by local reviews.</p>
+
+    <!-- 1. Solid Grounds -->
+    <div class="shop-card">
+      <div class="shop-rank">1</div>
+      <div class="shop-info">
+        <h3><a href="/coffee-shops/solid-grounds">Solid Grounds Coffee Roasters</a></h3>
+        <div class="shop-meta">
+          <span class="shop-rating">4.9 stars (91 reviews)</span>
+          <span>108 N Park St</span>
+          <span>Mon-Sat 7AM-5PM, Sun 8AM-5PM</span>
+        </div>
+        <p>A mountain cabin coffee shop with live edge wood ceilings, a cozy fireplace, and some of the best house-roasted beans in Teller County. Don't miss the breakfast burritos and the homemade coffee cake that actually tastes like coffee. Their medium-roast Americano has beautiful berry notes.</p>
+        <a href="/coffee-shops/solid-grounds" class="shop-link">Full Review &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 2. Java Haus -->
+    <div class="shop-card">
+      <div class="shop-rank">2</div>
+      <div class="shop-info">
+        <h3><a href="/coffee-shops/java-haus">Java Haus</a></h3>
+        <div class="shop-meta">
+          <span class="shop-rating">4.8 stars (219 reviews)</span>
+          <span>116 W Midland Ave</span>
+          <span>Mon-Fri 7AM-5PM, Sat-Sun 7AM-4PM</span>
+        </div>
+        <p>Woodland Park's go-to community coffee shop. Tons of indoor seating, a separate meeting room perfect for remote work or group gatherings, and a laid-back vibe. Known for great lattes, mochas, blueberry muffins, and cheese danishes. Free parking right next door.</p>
+        <a href="/coffee-shops/java-haus" class="shop-link">Full Review &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 3. Cafe Leo -->
+    <div class="shop-card">
+      <div class="shop-rank">3</div>
+      <div class="shop-info">
+        <h3><a href="/coffee-shops/cafe-leo">Cafe Leo</a></h3>
+        <div class="shop-meta">
+          <span class="shop-rating">4.6 stars (1,020 reviews)</span>
+          <span>320 W Midland Ave</span>
+          <span>6AM-8PM Daily</span>
+        </div>
+        <p>Norwegian-owned with European cafe vibes, mountain views from the seating area, and authentic Norwegian Sweet Buns you can't find anywhere else in Colorado. Huge tea and coffee menu, fresh pastries and sandwiches. The spicy avo bagel and pesto turkey are local favorites.</p>
+        <a href="/coffee-shops/cafe-leo" class="shop-link">Full Review &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 4. Starbucks -->
+    <div class="shop-card">
+      <div class="shop-rank">4</div>
+      <div class="shop-info">
+        <h3><a href="/coffee-shops/starbucks-woodland-park">Starbucks Woodland Park</a></h3>
+        <div class="shop-meta">
+          <span class="shop-rating">Best Patio in America?</span>
+          <span>Highway 24</span>
+          <span>Open Daily</span>
+        </div>
+        <p>It's a Starbucks, yes. But this one might have the best outdoor seating of any Starbucks in the country. Panoramic views of 14,115-foot Pikes Peak from 8,465 feet of elevation while you sip your usual order. This is what living in Woodland Park looks like.</p>
+        <a href="/coffee-shops/starbucks-woodland-park" class="shop-link">Full Review &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section">
+    <h2>Find Them on the Map</h2>
+    <p>All four shops are within a short drive of each other along Midland Avenue and Highway 24.</p>
+    <div class="map-embed">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12396.5!2d-105.0569!3d38.9939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8713572ef0288889%3A0x455214e03f81379e!2sWoodland%20Park%2C%20CO%2080863!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Woodland Park, CO coffee shops"></iframe>
+    </div>
+  </section>
+
+  <!-- INTERNAL LINKS -->
+  <section class="internal-links">
+    <h3>Explore Woodland Park Neighborhoods</h3>
+    <div class="internal-links-grid">
+      <a href="/woodland-heights">Woodland Heights</a>
+      <a href="/lovell-gulch">Lovell Gulch</a>
+      <a href="/westwood-lakes">Westwood Lakes</a>
+      <a href="/tamarac">Tamarac</a>
+      <a href="/sunnywood-manor">Sunnywood Manor</a>
+      <a href="/ranch-estates">Ranch Estates</a>
+      <a href="/paradise-estates">Paradise Estates</a>
+      <a href="/mountain-view-estates">Mountain View Estates</a>
+      <a href="/midland-area">Midland Area</a>
+      <a href="/ute-pass-corridor">Ute Pass Corridor</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="faq-inner">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">What are the best coffee shops in Woodland Park, CO?</div>
+        <div class="faq-a">The best coffee shops in Woodland Park include Solid Grounds Coffee Roasters (4.9 stars), Java Haus (4.8 stars), Cafe Leo (4.6 stars), and the Starbucks on Highway 24 which has stunning Pikes Peak views from its outdoor patio.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Are there coffee shops in Woodland Park with free WiFi for remote work?</div>
+        <div class="faq-a">Yes. Java Haus at 116 W Midland Ave is the most popular spot for remote work with plenty of indoor seating, free WiFi, and a private meeting room. Cafe Leo and Solid Grounds also offer comfortable work-friendly environments.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Which Woodland Park coffee shop has the best food?</div>
+        <div class="faq-a">Cafe Leo is known for Norwegian Sweet Buns, spicy avo bagels, and pesto turkey sandwiches. Solid Grounds has amazing breakfast burritos and coffee cake. Java Haus is famous for blueberry muffins and cheese danishes.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What coffee shops in Woodland Park open earliest?</div>
+        <div class="faq-a">Cafe Leo opens earliest at 6AM daily. Java Haus and Solid Grounds both open at 7AM on weekdays. Solid Grounds opens at 8AM on Sundays.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Is Woodland Park a good place to live for coffee lovers?</div>
+        <div class="faq-a">Absolutely. Woodland Park has a thriving local coffee scene with multiple independent shops all within a short drive along Midland Avenue, plus mountain views, clean air at 8,465 feet, and a welcoming small-town community. Contact Jonathan Dickey at (405) 588-7650 to explore homes here.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready to Live the Woodland Park Life?</h2>
+    <p>Great coffee is just the beginning. Explore homes in Woodland Park and find your mountain town.</p>
+    <div class="cta-actions">
+      <a href="/" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        Search Homes
+      </a>
+      <a href="tel:4055887650" class="btn btn-outline">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Jonathan (405) 588-7650
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 <a href="/">WP Mountain Homes</a> &mdash; Jonathan Dickey, Woodland Park Realtor. (405) 588-7650</p>
+  </footer>
+
+</body>
+</html>
