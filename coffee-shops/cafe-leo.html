@@ -4,170 +4,257 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cafe Leo | Woodland Park's European-Inspired Cafe &amp; Bakery</title>
-  <meta name="description" content="Cafe Leo at 320 W Midland Ave brings European cafe vibes to Woodland Park, CO. 4.6-star rated with 1,020 reviews. Norwegian-owned with authentic Norwegian Sweet Buns, fresh pastries, sandwiches, and mountain views.">
+  <meta name="description" content="Cafe Leo at 320 W Midland Ave brings European cafe vibes to Woodland Park, CO. Norwegian-owned with authentic Norwegian Sweet Buns, fresh pastries, spicy avo bagel, and mountain views. 4.6 stars, 1,020 reviews.">
   <link rel="canonical" href="https://wpmountainhomes.com/coffee-shops/cafe-leo">
-  <meta property="og:title" content="Cafe Leo | Woodland Park's European-Inspired Cafe &amp; Bakery">
-  <meta property="og:description" content="Cafe Leo at 320 W Midland Ave brings European cafe vibes to Woodland Park. Norwegian-owned with authentic Sweet Buns, fresh pastries, sandwiches, and mountain views. 4.6 stars, 1,020 reviews.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --forest: #2D4A3E; --sage: #7A9E7E; --sage-light: #B8D4BA;
-      --cream: #F5F0E8; --warm-white: #FDFBF7; --bark: #5C4033;
-      --bark-light: #8B6F5E; --charcoal: #2C2C2C; --gold: #C8A96E;
-      --gold-light: #E8D5AA; --rust: #B85C38; --sky: #A8C4D4;
-      --font-display: 'DM Serif Display', Georgia, serif;
-      --font-body: 'Outfit', system-ui, sans-serif;
-      --font-accent: 'Caveat', cursive;
+    :root{--forest:#2D4A3E;--sage:#7A9E7E;--gold:#C8A96E;--cream:#FAF6F0;--warm-white:#FFFDF9;--charcoal:#2C2C2C;--bark-light:#8B7B6B;--font-display:'DM Serif Display',serif;--font-body:'Outfit',sans-serif}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:var(--font-body);background:var(--warm-white);color:var(--charcoal);font-weight:300;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+
+    /* Nav */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:10000;padding:16px 40px;display:flex;align-items:center;justify-content:space-between;background:rgba(45,74,62,0.95);backdrop-filter:blur(12px)}
+    .nav-logo{font-family:var(--font-display);font-size:1.15rem;color:var(--warm-white);letter-spacing:-0.01em}
+    .nav-logo span{color:var(--gold)}
+    .nav-links{display:flex;gap:28px;align-items:center}
+    .nav-links a{font-size:0.8rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.8);transition:color 0.3s}
+    .nav-links a:hover{color:var(--gold)}
+    .nav-phone{color:var(--gold) !important;font-weight:500}
+
+    /* Hero */
+    .shop-hero{padding:140px 40px 80px;background:linear-gradient(135deg,var(--forest) 0%,#1a3a2e 100%);text-align:center;position:relative;overflow:hidden}
+    .shop-hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(122,158,126,0.08) 0%,transparent 70%);border-radius:50%}
+    .breadcrumb{font-size:0.78rem;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:20px}
+    .breadcrumb a{color:rgba(255,255,255,0.5);transition:color 0.3s}
+    .breadcrumb a:hover{color:var(--gold)}
+    .shop-hero h1{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.2rem);color:var(--warm-white);margin-bottom:12px;line-height:1.15}
+    .shop-hero .tagline{font-size:1.05rem;color:rgba(255,255,255,0.7);font-weight:300;max-width:580px;margin:0 auto 24px}
+    .rating-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,169,110,0.15);border:1px solid rgba(200,169,110,0.3);border-radius:100px;padding:8px 20px;font-size:0.85rem;color:var(--gold);font-weight:500}
+    .rating-badge .stars{letter-spacing:2px}
+
+    /* Sections */
+    .section{padding:80px 40px}
+    .section-inner{max-width:900px;margin:0 auto}
+    .section-label{font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.15em;color:var(--sage);margin-bottom:10px}
+    .section-title{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);color:var(--forest);margin-bottom:16px;line-height:1.2}
+    .section-text{font-size:0.95rem;color:var(--charcoal);line-height:1.75;font-weight:300;max-width:700px}
+    .section-text + .section-text{margin-top:16px}
+
+    .cream-bg{background:var(--cream)}
+
+    /* Info Cards */
+    .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-top:32px}
+    .info-card{background:var(--warm-white);border:1px solid rgba(45,74,62,0.08);border-radius:12px;padding:28px 24px}
+    .cream-bg .info-card{background:var(--warm-white);border-color:rgba(45,74,62,0.06)}
+    .info-card-icon{width:40px;height:40px;background:rgba(122,158,126,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+    .info-card-icon svg{width:20px;height:20px;stroke:var(--sage);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .info-card h4{font-family:var(--font-display);font-size:1.05rem;color:var(--forest);margin-bottom:6px}
+    .info-card p{font-size:0.85rem;color:var(--bark-light);line-height:1.6;font-weight:300}
+
+    /* Hours Table */
+    .hours-table{width:100%;max-width:400px;margin-top:24px;border-collapse:collapse}
+    .hours-table td{padding:10px 0;font-size:0.9rem;border-bottom:1px solid rgba(45,74,62,0.06)}
+    .hours-table td:first-child{font-weight:500;color:var(--forest);padding-right:32px}
+    .hours-table td:last-child{color:var(--bark-light);font-weight:300}
+
+    /* Highlights */
+    .highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:28px}
+    .highlight-item{display:flex;gap:14px;align-items:flex-start}
+    .highlight-dot{width:8px;height:8px;background:var(--gold);border-radius:50%;margin-top:7px;flex-shrink:0}
+    .highlight-item h4{font-family:var(--font-body);font-size:0.92rem;font-weight:500;color:var(--forest);margin-bottom:2px}
+    .highlight-item p{font-size:0.84rem;color:var(--bark-light);line-height:1.55;font-weight:300}
+
+    /* CTA */
+    .cta-banner{padding:80px 40px;background:var(--forest);text-align:center}
+    .cta-banner h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);color:var(--warm-white);margin-bottom:12px}
+    .cta-banner p{font-size:0.95rem;color:rgba(255,255,255,0.7);font-weight:300;max-width:500px;margin:0 auto 28px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;font-family:var(--font-body);font-size:0.82rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border-radius:8px;border:none;cursor:pointer;transition:all 0.3s}
+    .btn-primary{background:var(--gold);color:var(--warm-white)}
+    .btn-primary:hover{background:#b8994e;transform:translateY(-2px)}
+
+    /* Cross-links */
+    .cross-links{padding:60px 40px;background:var(--cream);text-align:center}
+    .cross-links h3{font-family:var(--font-display);font-size:1.3rem;color:var(--forest);margin-bottom:24px}
+    .cross-links-grid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:800px;margin:0 auto}
+    .cross-link{padding:10px 22px;background:var(--warm-white);border:1px solid rgba(45,74,62,0.1);border-radius:100px;font-size:0.82rem;font-weight:400;color:var(--forest);transition:all 0.3s}
+    .cross-link:hover{border-color:var(--gold);color:var(--gold)}
+
+    /* Footer */
+    .footer{padding:40px;background:var(--charcoal);text-align:center}
+    .footer p{font-size:0.78rem;color:rgba(255,255,255,0.4);font-weight:300}
+    .footer a{color:var(--gold);transition:color 0.3s}
+    .footer a:hover{color:var(--warm-white)}
+
+    @media(max-width:768px){
+      .nav{padding:14px 20px}
+      .nav-links{display:none}
+      .shop-hero{padding:120px 20px 60px}
+      .section{padding:60px 20px}
+      .cta-banner{padding:60px 20px}
+      .cross-links{padding:48px 20px}
+      .info-grid{grid-template-columns:1fr}
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: var(--font-body); color: var(--charcoal); background: var(--warm-white); line-height: 1.6; }
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(253,251,247,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(45,74,62,0.08); }
-    .nav-inner { max-width: 1280px; margin: 0 auto; padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; }
-    .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    .logo-icon { width: 42px; height: 42px; background: var(--forest); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
-    .logo-icon svg { width: 24px; height: 24px; fill: var(--cream); }
-    .logo-text { font-family: var(--font-display); font-size: 1.35rem; color: var(--forest); letter-spacing: -0.02em; }
-    .logo-text span { display: block; font-family: var(--font-body); font-size: 0.6rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.2em; color: var(--bark-light); margin-top: -2px; }
-    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
-    .nav-links a { text-decoration: none; color: var(--charcoal); font-size: 0.88rem; font-weight: 500; }
-    .nav-cta { background: var(--forest) !important; color: var(--cream) !important; padding: 10px 24px; border-radius: 6px; font-weight: 600 !important; }
-    .page-hero { background: linear-gradient(165deg, rgba(45,74,62,0.88) 0%, rgba(26,58,46,0.82) 40%, rgba(42,63,53,0.78) 100%), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_46mx0l46mx0l46mx.png-v0yGrsLID68Beksd72qwiI3C9vTuZF.jpeg') center/cover no-repeat; padding: 140px 32px 80px; position: relative; overflow: hidden; }
-    .page-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse at 20% 80%, rgba(122,158,126,0.15) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(200,169,110,0.1) 0%, transparent 50%); }
-    .page-hero-inner { max-width: 1280px; margin: 0 auto; position: relative; z-index: 2; }
-    .breadcrumb { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
-    .breadcrumb a { color: var(--sage-light); text-decoration: none; }
-    .page-hero h1 { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.5rem); color: var(--cream); line-height: 1.1; margin-bottom: 16px; max-width: 700px; }
-    .page-hero p { font-size: 1.1rem; color: rgba(255,255,255,0.6); max-width: 600px; line-height: 1.7; font-weight: 300; }
-    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(200,169,110,0.15); border: 1px solid rgba(200,169,110,0.3); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: var(--gold-light); font-weight: 500; margin-bottom: 20px; }
-    .hero-badge svg { width: 14px; height: 14px; fill: var(--gold); }
-    .content { max-width: 900px; margin: 0 auto; padding: 64px 32px; }
-    .content h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--forest); margin: 48px 0 16px; letter-spacing: -0.01em; }
-    .content h2:first-child { margin-top: 0; }
-    .content h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--forest); margin: 32px 0 12px; }
-    .content p { font-size: 1rem; color: var(--bark-light); line-height: 1.8; margin-bottom: 16px; }
-    .content ul { margin: 16px 0 24px 24px; }
-    .content li { font-size: 0.95rem; color: var(--bark-light); line-height: 1.7; margin-bottom: 8px; }
-    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 32px 0; }
-    .info-card { background: var(--cream); border-radius: 12px; padding: 24px; text-align: center; }
-    .info-card h4 { font-family: var(--font-display); font-size: 1.5rem; color: var(--gold); margin-bottom: 4px; }
-    .info-card p { font-size: 0.8rem; color: var(--bark-light); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; margin: 0; }
-    .hours-table { width: 100%; border-collapse: collapse; margin: 16px 0 32px; }
-    .hours-table td { padding: 10px 16px; font-size: 0.92rem; color: var(--bark-light); border-bottom: 1px solid rgba(45,74,62,0.08); }
-    .hours-table td:first-child { font-weight: 600; color: var(--forest); width: 140px; }
-    .cta-banner { background: var(--forest); border-radius: 16px; padding: 48px 32px; text-align: center; margin: 48px 0; }
-    .cta-banner h3 { font-family: var(--font-display); font-size: 1.5rem; color: var(--cream); margin-bottom: 8px; }
-    .cta-banner p { color: rgba(255,255,255,0.6); margin-bottom: 20px; }
-    .cta-banner a { display: inline-block; background: var(--gold); color: var(--charcoal); padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; }
-    .other-shops { margin: 48px 0; }
-    .other-shops h2 { margin-bottom: 24px; }
-    .shop-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
-    .shop-link { display: block; background: var(--cream); border-radius: 10px; padding: 16px 20px; text-decoration: none; color: var(--forest); font-weight: 500; font-size: 0.92rem; transition: background 0.2s, transform 0.2s; }
-    .shop-link:hover { background: var(--gold-light); transform: translateY(-1px); }
-    .shop-link small { display: block; color: var(--bark-light); font-weight: 300; font-size: 0.8rem; margin-top: 2px; }
-    footer { background: var(--charcoal); padding: 48px 32px; text-align: center; }
-    footer p { font-size: 0.8rem; color: rgba(255,255,255,0.3); }
-    footer a { color: var(--sage-light); text-decoration: none; }
-    @media (max-width: 768px) { .nav-links { display: none; } .content { padding: 48px 20px; } .info-grid { grid-template-columns: repeat(2, 1fr); } }
   </style>
 </head>
 <body>
-  <nav>
-    <div class="nav-inner">
-      <a href="../index.html" class="logo">
-        <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z"/></svg></div>
-        <div class="logo-text">Boulder Street<span>Jonathan Dickey &bull; Woodland Park</span></div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="../index.html#areas">Areas</a></li>
-        <li><a href="../index.html#trails">Trails</a></li>
-        <li><a href="../index.html#faq">FAQ</a></li>
-        <li><a href="tel:4055887650" class="nav-cta">Call (405) 588-7650</a></li>
-      </ul>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <a href="/" class="nav-logo">WP Mountain <span>Homes</span></a>
+    <div class="nav-links">
+      <a href="/#neighborhoods">Neighborhoods</a>
+      <a href="/#about">About</a>
+      <a href="tel:4055887650" class="nav-phone">(405) 588-7650</a>
     </div>
   </nav>
 
-  <div class="page-hero">
-    <div class="page-hero-inner">
-      <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#areas">Community</a> / Cafe Leo</div>
-      <div class="hero-badge">
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        4.6 Rating &bull; 1,020 Reviews
-      </div>
-      <h1>Cafe Leo</h1>
-      <p>European-inspired cafe and bakery on Midland Avenue -- Norwegian-owned with authentic sweet buns, mountain views, and a menu that makes every visit feel like a small trip abroad.</p>
+  <!-- Hero -->
+  <section class="shop-hero">
+    <div class="breadcrumb"><a href="/">Home</a> &nbsp;/&nbsp; Coffee Shops &nbsp;/&nbsp; Cafe Leo</div>
+    <h1>Cafe Leo</h1>
+    <p class="tagline">European-inspired cafe and bakery on Midland Avenue -- Norwegian-owned with authentic sweet buns, mountain views, and a menu that makes every visit feel like a small trip abroad.</p>
+    <div class="rating-badge">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+      4.6 rating &middot; 1,020 reviews
     </div>
-  </div>
+  </section>
 
-  <div class="content">
+  <!-- About -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label">About the Shop</div>
+      <h2 class="section-title">A Taste of Norway in the Mountains</h2>
+      <p class="section-text">Cafe Leo is not your typical mountain-town coffee stop. Located at 320 W Midland Ave in Woodland Park, it is a Norwegian-owned cafe and bakery that brings genuine European warmth to the heart of the Pikes Peak region. With a 4.6-star rating across more than 1,020 reviews, it has become one of the most popular and most-reviewed gathering spots in town -- and for good reason.</p>
+      <p class="section-text">The cafe is open from 6 AM to 8 PM daily, making it one of the earliest and latest options in Woodland Park. Whether you are stopping in for a pre-dawn coffee on the way to a hike or settling in for an evening pastry and tea, Cafe Leo has you covered. The seating area offers mountain views and a European cafe atmosphere that feels relaxed, unhurried, and genuinely different from anything else in town.</p>
 
-    <h2>About Cafe Leo</h2>
-    <p>Cafe Leo is not your typical mountain-town coffee stop. Located at 320 W Midland Ave in Woodland Park, it is a Norwegian-owned cafe and bakery that brings genuine European warmth to the heart of the Pikes Peak region. With a 4.6-star rating across more than 1,020 reviews, it has become one of the most popular and most-reviewed gathering spots in town -- and for good reason.</p>
-    <p>The cafe is open from 6 AM to 8 PM daily, making it one of the earliest and latest options in Woodland Park. Whether you are stopping in for a pre-dawn coffee on the way to a hike or settling in for an evening pastry and tea, Cafe Leo has you covered. The seating area offers mountain views and a European cafe atmosphere that feels relaxed, unhurried, and genuinely different from anything else in town.</p>
-
-    <div class="info-grid">
-      <div class="info-card"><h4>4.6</h4><p>Star Rating</p></div>
-      <div class="info-card"><h4>1,020</h4><p>Reviews</p></div>
-      <div class="info-card"><h4>320 W Midland</h4><p>Address</p></div>
-      <div class="info-card"><h4>6AM - 8PM</h4><p>Open Daily</p></div>
-    </div>
-
-    <h2>Hours</h2>
-    <table class="hours-table">
-      <tr><td>Monday</td><td>6:00 AM - 8:00 PM</td></tr>
-      <tr><td>Tuesday</td><td>6:00 AM - 8:00 PM</td></tr>
-      <tr><td>Wednesday</td><td>6:00 AM - 8:00 PM</td></tr>
-      <tr><td>Thursday</td><td>6:00 AM - 8:00 PM</td></tr>
-      <tr><td>Friday</td><td>6:00 AM - 8:00 PM</td></tr>
-      <tr><td>Saturday</td><td>6:00 AM - 8:00 PM</td></tr>
-      <tr><td>Sunday</td><td>6:00 AM - 8:00 PM</td></tr>
-    </table>
-
-    <h2>What Makes It Special</h2>
-    <p>The Norwegian ownership is not just a footnote -- it shapes the entire experience. Cafe Leo serves authentic Norwegian Sweet Buns that you genuinely cannot find anywhere else in Colorado. These are made from scratch using traditional recipes, and regulars know to get there early because they sell out. If you have ever traveled to Scandinavia and missed the bakeries, this is the closest thing you will find on the Front Range.</p>
-    <p>Beyond the sweet buns, the menu is wide and thoughtful. The coffee and tea selection is huge, covering everything from classic espresso drinks to specialty teas that go well beyond the typical coffee-shop afterthought. The pastry case rotates with fresh-baked items daily, and the sandwich menu has developed its own following. The spicy avo bagel and the pesto turkey sandwich are the two most frequently recommended items -- flavorful, fresh, and made to order.</p>
-    <p>The atmosphere adds to it. The seating area faces the mountains, and the interior leans into a European cafe aesthetic: clean, bright, and designed to make you linger. It is the kind of place where people come in for a quick coffee and end up staying for an hour.</p>
-
-    <h3>What Locals Love</h3>
-    <ul>
-      <li>Authentic Norwegian Sweet Buns -- the only place in Colorado to get them</li>
-      <li>Huge tea and coffee menu with something for every taste</li>
-      <li>Spicy avo bagel and pesto turkey sandwich are local favorites</li>
-      <li>Fresh pastries baked daily and rotated regularly</li>
-      <li>Mountain views from the seating area with European cafe vibes</li>
-      <li>Open 6 AM to 8 PM daily -- earliest and latest hours in town</li>
-      <li>Norwegian-owned with a genuine sense of place and tradition</li>
-    </ul>
-
-    <h2>Address &amp; Directions</h2>
-    <p>Cafe Leo is located at <strong>320 W Midland Ave, Woodland Park, CO 80863</strong>, on the west end of the main downtown corridor. Coming from Highway 24, head south on Baldwin Street and continue west on Midland Ave. The cafe is on the right with street parking available along Midland and in nearby lots. It is an easy walk from most downtown shops and neighborhoods.</p>
-
-    <h2>Living Near Cafe Leo</h2>
-    <p>The west end of Midland Avenue puts you close to some of Woodland Park's most desirable neighborhoods. Areas like Tamarac, Paradise Estates, and the western reaches of the Midland corridor offer larger lots, mature trees, and a quieter feel while still being a short walk or drive to downtown amenities. The mix of newer construction and established mountain homes means there are options at multiple price points.</p>
-    <p>Homes in these neighborhoods typically range from the low $400s to the high $600s, with some custom builds and larger-lot properties reaching above $700,000. For buyers who want easy access to great food, mountain views, and the daily rhythm of a small mountain town, living near Cafe Leo checks a lot of boxes.</p>
-
-    <div class="cta-banner">
-      <h3>Want to Live Near Cafe Leo?</h3>
-      <p>Explore homes on the west side of Woodland Park with mountain views and walkable dining.</p>
-      <a href="../index.html#areas">Search Homes Nearby</a>
-    </div>
-
-    <div class="other-shops">
-      <h2>More Coffee Shops in Woodland Park</h2>
-      <div class="shop-links">
-        <a class="shop-link" href="java-haus.html">Java Haus<small>116 W Midland Ave</small></a>
-        <a class="shop-link" href="solid-grounds.html">Solid Grounds Coffee Roasters<small>108 N Park St</small></a>
-        <a class="shop-link" href="model-citizen.html">Model Citizen Coffee<small>214 W Midland Ave</small></a>
-        <a class="shop-link" href="gold-hill-java.html">Gold Hill Java<small>600 W Midland Ave</small></a>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h4>Address</h4>
+          <p>320 W Midland Ave<br>Woodland Park, CO 80863</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>Hours</h4>
+          <p>Open Daily<br>6:00 AM - 8:00 PM</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h4>Rating</h4>
+          <p>4.6 out of 5 stars<br>Based on 1,020 reviews</p>
+        </div>
       </div>
     </div>
+  </section>
 
-  </div>
+  <!-- Hours -->
+  <section class="section cream-bg">
+    <div class="section-inner">
+      <div class="section-label">Hours &amp; Visiting</div>
+      <h2 class="section-title">Plan Your Visit</h2>
+      <p class="section-text">Cafe Leo keeps it simple with the same generous hours every day of the week: 6 AM to 8 PM. That makes it one of the earliest openers in town (great for pre-hike fuel) and one of the latest (perfect for an evening pastry and tea). No guessing, no checking -- just show up.</p>
+      <table class="hours-table">
+        <tr><td>Monday</td><td>6:00 AM - 8:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>6:00 AM - 8:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>6:00 AM - 8:00 PM</td></tr>
+        <tr><td>Thursday</td><td>6:00 AM - 8:00 PM</td></tr>
+        <tr><td>Friday</td><td>6:00 AM - 8:00 PM</td></tr>
+        <tr><td>Saturday</td><td>6:00 AM - 8:00 PM</td></tr>
+        <tr><td>Sunday</td><td>6:00 AM - 8:00 PM</td></tr>
+      </table>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2026 Jonathan Dickey, Boulder Street Real Estate. Brokered by Real Broker, LLC. &bull; <a href="../index.html">Home</a> &bull; Woodland Park, CO 80863 &bull; <a href="tel:4055887650">(405) 588-7650</a></p>
+  <!-- What Makes It Special -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label">What Makes It Special</div>
+      <h2 class="section-title">Why Locals Love Cafe Leo</h2>
+      <div class="highlights">
+        <div class="highlight-item">
+          <div class="highlight-dot"></div>
+          <div>
+            <h4>Authentic Norwegian Sweet Buns</h4>
+            <p>The Norwegian ownership isn't just a footnote -- it shapes the entire experience. The authentic Norwegian Sweet Buns are made from scratch using traditional recipes and you genuinely cannot find them anywhere else in Colorado. Get there early; they sell out.</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-dot"></div>
+          <div>
+            <h4>Spicy Avo Bagel &amp; Pesto Turkey</h4>
+            <p>The sandwich menu has developed its own following. The spicy avo bagel and the pesto turkey are the two most frequently recommended items -- flavorful, fresh, and made to order.</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-dot"></div>
+          <div>
+            <h4>Huge Tea &amp; Coffee Menu</h4>
+            <p>The coffee and tea selection goes well beyond the typical coffee-shop afterthought. Classic espresso drinks, specialty teas, and seasonal creations cover every taste.</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-dot"></div>
+          <div>
+            <h4>Fresh Pastries Baked Daily</h4>
+            <p>The pastry case rotates with fresh-baked items every day. From croissants to specialty cakes, everything is made in-house and pairs perfectly with a morning coffee or afternoon tea.</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-dot"></div>
+          <div>
+            <h4>Mountain Views from Your Seat</h4>
+            <p>The seating area faces the mountains, and on a clear day the views are stunning. It's the kind of backdrop that makes a simple coffee and pastry feel like a European holiday.</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-dot"></div>
+          <div>
+            <h4>European Cafe Vibes</h4>
+            <p>The interior leans into a clean, bright European aesthetic -- designed to make you linger. It's the kind of place where people come for a quick coffee and end up staying for an hour.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Living Nearby -->
+  <section class="section cream-bg">
+    <div class="section-inner">
+      <div class="section-label">Living Nearby</div>
+      <h2 class="section-title">Homes Near Cafe Leo</h2>
+      <p class="section-text">The west end of Midland Avenue puts you close to some of Woodland Park's most desirable neighborhoods. Areas like Tamarac, Paradise Estates, and the western reaches of the Midland corridor offer larger lots, mature trees, and a quieter feel while still being a short walk or drive to downtown amenities.</p>
+      <p class="section-text">Homes in these neighborhoods typically range from the low $400s to the high $600s, with some custom builds and larger-lot properties reaching above $700,000. For buyers who want easy access to great food, mountain views, and the daily rhythm of a small mountain town, living near Cafe Leo checks a lot of boxes.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <h2>Want Cafe Leo as Your Morning Ritual?</h2>
+    <p>Explore homes on the west side of Woodland Park with mountain views and walkable dining.</p>
+    <a href="/#neighborhoods" class="btn btn-primary">Search Nearby Homes</a>
+  </section>
+
+  <!-- Cross Links -->
+  <section class="cross-links">
+    <h3>More Woodland Park Coffee Shops</h3>
+    <div class="cross-links-grid">
+      <a href="/coffee-shops/java-haus" class="cross-link">Java Haus</a>
+      <a href="/coffee-shops/solid-grounds" class="cross-link">Solid Grounds Coffee Roasters</a>
+      <a href="/coffee-shops/starbucks-woodland-park" class="cross-link">Starbucks Woodland Park</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 WP Mountain Homes &middot; Jonathan Dickey, Realtor &middot; <a href="tel:4055887650">(405) 588-7650</a></p>
   </footer>
+
 </body>
 </html>

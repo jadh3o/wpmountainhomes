@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Java Haus CO | Cozy Coffee &amp; Community in Woodland Park</title>
-  <meta name="description" content="Java Haus at 116 W Midland Ave is Woodland Park's favorite coffee shop. 4.8-star rated with 219 reviews. Great lattes, mochas, blueberry muffins, and a separate meeting room. Explore homes nearby.">
-  <link rel="canonical" href="https://wpmountainhomes.com/coffee-shops/java-haus">
+  <title>Starbucks Woodland Park | Best Outdoor Seating &amp; Mountain Views at Any Starbucks</title>
+  <meta name="description" content="The Starbucks in Woodland Park, CO might have the best outdoor patio of any Starbucks in America. Sip your favorite drink with panoramic views of 14,115-foot Pikes Peak. Seriously.">
+  <link rel="canonical" href="https://wpmountainhomes.com/coffee-shops/starbucks-woodland-park">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root{--forest:#2D4A3E;--sage:#7A9E7E;--gold:#C8A96E;--cream:#FAF6F0;--warm-white:#FFFDF9;--charcoal:#2C2C2C;--bark-light:#8B7B6B;--font-display:'DM Serif Display',serif;--font-body:'Outfit',sans-serif}
@@ -24,14 +24,13 @@
 
     /* Hero */
     .shop-hero{padding:140px 40px 80px;background:linear-gradient(135deg,var(--forest) 0%,#1a3a2e 100%);text-align:center;position:relative;overflow:hidden}
-    .shop-hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(122,158,126,0.08) 0%,transparent 70%);border-radius:50%}
+    .shop-hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(200,169,110,0.06) 0%,transparent 70%);border-radius:50%}
     .breadcrumb{font-size:0.78rem;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:20px}
     .breadcrumb a{color:rgba(255,255,255,0.5);transition:color 0.3s}
     .breadcrumb a:hover{color:var(--gold)}
     .shop-hero h1{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.2rem);color:var(--warm-white);margin-bottom:12px;line-height:1.15}
     .shop-hero .tagline{font-size:1.05rem;color:rgba(255,255,255,0.7);font-weight:300;max-width:580px;margin:0 auto 24px}
-    .rating-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,169,110,0.15);border:1px solid rgba(200,169,110,0.3);border-radius:100px;padding:8px 20px;font-size:0.85rem;color:var(--gold);font-weight:500}
-    .rating-badge .stars{letter-spacing:2px}
+    .fun-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,169,110,0.15);border:1px solid rgba(200,169,110,0.3);border-radius:100px;padding:8px 20px;font-size:0.85rem;color:var(--gold);font-weight:500}
 
     /* Sections */
     .section{padding:80px 40px}
@@ -52,12 +51,6 @@
     .info-card h4{font-family:var(--font-display);font-size:1.05rem;color:var(--forest);margin-bottom:6px}
     .info-card p{font-size:0.85rem;color:var(--bark-light);line-height:1.6;font-weight:300}
 
-    /* Hours Table */
-    .hours-table{width:100%;max-width:400px;margin-top:24px;border-collapse:collapse}
-    .hours-table td{padding:10px 0;font-size:0.9rem;border-bottom:1px solid rgba(45,74,62,0.06)}
-    .hours-table td:first-child{font-weight:500;color:var(--forest);padding-right:32px}
-    .hours-table td:last-child{color:var(--bark-light);font-weight:300}
-
     /* Highlights */
     .highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:28px}
     .highlight-item{display:flex;gap:14px;align-items:flex-start}
@@ -65,10 +58,14 @@
     .highlight-item h4{font-family:var(--font-body);font-size:0.92rem;font-weight:500;color:var(--forest);margin-bottom:2px}
     .highlight-item p{font-size:0.84rem;color:var(--bark-light);line-height:1.55;font-weight:300}
 
+    /* Callout */
+    .callout{background:rgba(200,169,110,0.08);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:24px 28px;margin-top:32px}
+    .callout p{font-size:0.95rem;color:var(--forest);line-height:1.7;font-weight:300;font-style:italic}
+
     /* CTA */
     .cta-banner{padding:80px 40px;background:var(--forest);text-align:center}
     .cta-banner h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);color:var(--warm-white);margin-bottom:12px}
-    .cta-banner p{font-size:0.95rem;color:rgba(255,255,255,0.7);font-weight:300;max-width:500px;margin:0 auto 28px}
+    .cta-banner p{font-size:0.95rem;color:rgba(255,255,255,0.7);font-weight:300;max-width:520px;margin:0 auto 28px}
     .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;font-family:var(--font-body);font-size:0.82rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border-radius:8px;border:none;cursor:pointer;transition:all 0.3s}
     .btn-primary{background:var(--gold);color:var(--warm-white)}
     .btn-primary:hover{background:#b8994e;transform:translateY(-2px)}
@@ -111,143 +108,134 @@
 
   <!-- Hero -->
   <section class="shop-hero">
-    <div class="breadcrumb"><a href="/">Home</a> &nbsp;/&nbsp; Coffee Shops &nbsp;/&nbsp; Java Haus</div>
-    <h1>Java Haus</h1>
-    <p class="tagline">Cozy coffee and community on Midland Avenue -- tons of indoor seating, a separate meeting room, and the laid-back vibe that makes Woodland Park feel like home.</p>
-    <div class="rating-badge">
-      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-      4.8 rating &middot; 219 reviews
+    <div class="breadcrumb"><a href="/">Home</a> &nbsp;/&nbsp; Coffee Shops &nbsp;/&nbsp; Starbucks</div>
+    <h1>The Best Starbucks Patio in America?</h1>
+    <p class="tagline">We're not saying it's official. But show us another Starbucks where you sip a Pumpkin Spice Latte staring at a 14,115-foot mountain. We'll wait.</p>
+    <div class="fun-badge">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      Elevation: 8,465 ft &middot; Views: Priceless
     </div>
   </section>
 
   <!-- About -->
   <section class="section">
     <div class="section-inner">
-      <div class="section-label">About the Shop</div>
-      <h2 class="section-title">Woodland Park's Favorite Coffee Spot</h2>
-      <p class="section-text">Java Haus is one of Woodland Park's highest-rated coffee shops and a genuine community gathering place. Located at 116 W Midland Ave in the heart of downtown, it has earned a 4.8-star rating across 219 reviews for good reason: the coffee is excellent, the food is homemade, and the atmosphere is the kind of welcoming, no-pressure environment that keeps people coming back every morning.</p>
-      <p class="section-text">What sets Java Haus apart from a typical coffee stop is the space itself. There is tons of indoor seating spread across multiple areas, including a separate meeting room that local groups, book clubs, and small businesses use regularly. The laid-back vibe makes it equally suited for catching up with a friend, working remotely on your laptop, or just reading the paper with a mocha.</p>
+      <div class="section-label">Yes, It's a Starbucks</div>
+      <h2 class="section-title">But Not Like Any Starbucks You've Been To</h2>
+      <p class="section-text">Look, we get it. A real estate agent writing about Starbucks? Hear us out. The Starbucks in Woodland Park has something that 35,000+ other Starbucks locations around the world simply don't have: a direct, jaw-dropping, stop-you-mid-sip view of Pikes Peak from the outdoor patio.</p>
+      <p class="section-text">We're talking about a 14,115-foot mountain -- the same one that inspired "America the Beautiful" -- framed perfectly from a handful of patio tables in a small mountain town in Colorado. Your Venti iced coffee has never looked this good in an Instagram story. And the sunrises? Forget about it.</p>
+
+      <div class="callout">
+        <p>"I've been to Starbucks in 30+ states, and the Woodland Park location has the most stunning outdoor seating I've ever seen at any Starbucks. The Pikes Peak view is absolutely unreal." -- Actual Google review sentiment</p>
+      </div>
 
       <div class="info-grid">
         <div class="info-card">
           <div class="info-card-icon">
             <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-          <h4>Address</h4>
-          <p>116 W Midland Ave<br>Woodland Park, CO 80863</p>
+          <h4>Location</h4>
+          <p>800 E US Hwy 24<br>Woodland Park, CO 80863</p>
         </div>
         <div class="info-card">
           <div class="info-card-icon">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
           <h4>Hours</h4>
-          <p>Mon - Fri: 7 AM - 5 PM<br>Sat - Sun: 7 AM - 4 PM</p>
+          <p>Daily: 5:00 AM - 7:30 PM<br>(Standard Starbucks hours)</p>
         </div>
         <div class="info-card">
           <div class="info-card-icon">
-            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h2a2 2 0 012 2v1a2 2 0 01-2 2h-2"/><line x1="6" y1="20" x2="12" y2="20"/><line x1="9" y1="16" x2="9" y2="20"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
           </div>
-          <h4>Parking</h4>
-          <p>Free parking<br>right next door</p>
+          <h4>Elevation</h4>
+          <p>8,465 feet above sea level<br>Higher than any Starbucks you've been to</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Hours -->
-  <section class="section cream-bg">
-    <div class="section-inner">
-      <div class="section-label">Hours &amp; Visiting</div>
-      <h2 class="section-title">Plan Your Visit</h2>
-      <p class="section-text">Java Haus opens at 7 AM every day of the week, with weekday hours running to 5 PM and weekends wrapping up a touch earlier at 4 PM. Whether you're grabbing a quick latte on your way to work or settling in for a remote work session, the timing covers the full morning-to-afternoon window.</p>
-      <table class="hours-table">
-        <tr><td>Monday</td><td>7:00 AM - 5:00 PM</td></tr>
-        <tr><td>Tuesday</td><td>7:00 AM - 5:00 PM</td></tr>
-        <tr><td>Wednesday</td><td>7:00 AM - 5:00 PM</td></tr>
-        <tr><td>Thursday</td><td>7:00 AM - 5:00 PM</td></tr>
-        <tr><td>Friday</td><td>7:00 AM - 5:00 PM</td></tr>
-        <tr><td>Saturday</td><td>7:00 AM - 4:00 PM</td></tr>
-        <tr><td>Sunday</td><td>7:00 AM - 4:00 PM</td></tr>
-      </table>
     </div>
   </section>
 
   <!-- What Makes It Special -->
-  <section class="section">
+  <section class="section cream-bg">
     <div class="section-inner">
-      <div class="section-label">What Makes It Special</div>
-      <h2 class="section-title">Why Locals Love Java Haus</h2>
+      <div class="section-label">The Case for Best Patio</div>
+      <h2 class="section-title">Why This Starbucks Hits Different</h2>
+      <p class="section-text">Every Starbucks has coffee. This one has coffee AND a front-row seat to one of the most famous mountains in America. Here's why this particular location is worth talking about:</p>
       <div class="highlights">
         <div class="highlight-item">
           <div class="highlight-dot"></div>
           <div>
-            <h4>Lattes and Mochas Done Right</h4>
-            <p>The espresso drinks are consistently well-made -- the lattes and mochas are the most popular orders. Baristas know their craft, and regulars know them by name.</p>
+            <h4>The Pikes Peak Panorama</h4>
+            <p>The outdoor patio faces directly toward Pikes Peak. On a clear morning -- which is most mornings in Colorado -- the mountain fills your entire field of view. It's the kind of backdrop that makes a regular Tuesday feel like vacation.</p>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-dot"></div>
           <div>
-            <h4>Blueberry Muffins &amp; Cheese Danishes</h4>
-            <p>The blueberry muffins are baked fresh and disappear fast. The cheese danishes have their own loyal following. Combined with great coffee, they make a complete morning destination.</p>
+            <h4>Sunrise Coffee at 8,465 Feet</h4>
+            <p>Imagine your morning coffee routine, but the sun is rising over a mountain, painting the sky pink and gold, and the air is crisp and clean at over 8,000 feet. That's just a normal Wednesday here.</p>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-dot"></div>
           <div>
-            <h4>The Meeting Room</h4>
-            <p>A separate meeting room gives Java Haus a dual purpose: casual hangout on one side, productive workspace on the other. HOA meetings, book clubs, and birthday parties happen here regularly.</p>
+            <h4>The "Wait, This Is Just a Starbucks?" Moment</h4>
+            <p>First-time visitors always do a double-take. You walk in expecting a standard Starbucks, grab your drink, step outside, and suddenly you're staring at a fourteener. The contrast between "corporate chain" and "mountain paradise" is genuinely funny.</p>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-dot"></div>
           <div>
-            <h4>Built for Remote Work</h4>
-            <p>Tons of indoor seating, reliable Wi-Fi, and a relaxed atmosphere where nobody rushes you out. Remote workers love this spot for long productive mornings.</p>
+            <h4>Perfect Post-Hike Stop</h4>
+            <p>Woodland Park is surrounded by hiking trails, and this Starbucks sits right on Highway 24 -- making it the ideal recovery stop after a morning on the trails. Earn your Frappuccino.</p>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-dot"></div>
           <div>
-            <h4>Free Parking Next Door</h4>
-            <p>No circling the block, no meters. The free parking lot right next door makes getting in and out completely hassle-free.</p>
+            <h4>Year-Round Mountain Views</h4>
+            <p>Snow-capped Pikes Peak in winter, wildflower-covered foothills in summer, golden aspens in fall. The view from this patio changes with the seasons, and every version is stunning.</p>
           </div>
         </div>
         <div class="highlight-item">
           <div class="highlight-dot"></div>
           <div>
-            <h4>The Laid-Back Vibe</h4>
-            <p>Java Haus is the kind of place where you come for coffee and stay for the atmosphere. Unhurried, friendly, and perfectly suited for laptops, books, or long conversations.</p>
+            <h4>The Small-Town Starbucks Vibe</h4>
+            <p>Unlike city Starbucks locations where everyone's rushing, the Woodland Park Starbucks has the energy of a small-town gathering spot. People actually sit, relax, and chat. Imagine that.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Living Nearby -->
-  <section class="section cream-bg">
+  <!-- Living Here -->
+  <section class="section">
     <div class="section-inner">
-      <div class="section-label">Living Nearby</div>
-      <h2 class="section-title">Homes Near Java Haus</h2>
-      <p class="section-text">Homes within walking distance of Java Haus put you at the center of Woodland Park's daily life. The surrounding neighborhoods -- including Woodland Heights, Sunnywood Manor, and the Midland Area -- offer a mix of mountain cottages, updated family homes, and properties with Pikes Peak views. Being close to downtown means quick access to groceries, restaurants, the library, and community events throughout the year.</p>
-      <p class="section-text">Average home prices in these walkable downtown neighborhoods range from the mid-$300s to the mid-$600s, making it an attainable option for buyers who want convenience and mountain living in the same package.</p>
+      <div class="section-label">Living in Woodland Park</div>
+      <h2 class="section-title">This Is Just Tuesday Morning</h2>
+      <p class="section-text">Here's the thing about the Woodland Park Starbucks: for the people who live here, it's not a destination. It's just... their Starbucks. The mountain views, the clean air, the lack of crowds -- that's not a vacation. That's the morning commute. That's a coffee run with the kids on Saturday.</p>
+      <p class="section-text">Woodland Park sits at the base of Pikes Peak along the Ute Pass corridor, about 25 minutes from Colorado Springs. Homes here range from mountain cabins to modern family homes, with prices significantly lower than comparable Front Range cities. You get the mountain lifestyle without the mountain price tag -- and apparently, the best Starbucks patio in the country as a bonus.</p>
+
+      <div class="callout">
+        <p>Most people pay extra for mountain views from their home. In Woodland Park, you get them free with your morning coffee. Literally.</p>
+      </div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta-banner">
-    <h2>Want Java Haus as Your Morning Spot?</h2>
-    <p>Browse homes within walking distance of downtown Woodland Park.</p>
-    <a href="/#neighborhoods" class="btn btn-primary">Search Nearby Homes</a>
+    <h2>Ready to Make This Your Regular Starbucks?</h2>
+    <p>Browse homes in Woodland Park and start enjoying Pikes Peak views with your morning coffee -- every single day.</p>
+    <a href="/#neighborhoods" class="btn btn-primary">Search Homes in Woodland Park</a>
   </section>
 
   <!-- Cross Links -->
   <section class="cross-links">
     <h3>More Woodland Park Coffee Shops</h3>
     <div class="cross-links-grid">
+      <a href="/coffee-shops/java-haus" class="cross-link">Java Haus</a>
       <a href="/coffee-shops/cafe-leo" class="cross-link">Cafe Leo</a>
       <a href="/coffee-shops/solid-grounds" class="cross-link">Solid Grounds Coffee Roasters</a>
-      <a href="/coffee-shops/starbucks-woodland-park" class="cross-link">Starbucks Woodland Park</a>
     </div>
   </section>
 
