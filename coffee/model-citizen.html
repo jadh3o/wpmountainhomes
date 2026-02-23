@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Citizen Coffee — Artisan Roasters in Woodland Park, CO | Boulder Street Real Estate</title>
+  <meta name="description" content="Model Citizen Coffee at 214 W Midland Ave in Woodland Park, CO. Artisan-roasted beans, European-style espresso, coffee flights, and in-house baked goods. Explore homes nearby.">
+  <link rel="canonical" href="https://wpmountainhomes.com/coffee/model-citizen.html">
+  <meta property="og:title" content="Model Citizen Coffee — Artisan Roasters in Woodland Park, CO | Boulder Street Real Estate">
+  <meta property="og:description" content="Model Citizen Coffee at 214 W Midland Ave. Artisan-roasted beans, European-style espresso, coffee flights, and in-house baked goods.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #2D4A3E; --sage: #7A9E7E; --sage-light: #B8D4BA;
+      --cream: #F5F0E8; --warm-white: #FDFBF7; --bark: #5C4033;
+      --bark-light: #8B6F5E; --charcoal: #2C2C2C; --gold: #C8A96E;
+      --gold-light: #E8D5AA; --rust: #B85C38; --sky: #A8C4D4;
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'Outfit', system-ui, sans-serif;
+      --font-accent: 'Caveat', cursive;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); color: var(--charcoal); background: var(--warm-white); line-height: 1.6; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(253,251,247,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(45,74,62,0.08); }
+    .nav-inner { max-width: 1280px; margin: 0 auto; padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; }
+    .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .logo-icon { width: 42px; height: 42px; background: var(--forest); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-icon svg { width: 24px; height: 24px; fill: var(--cream); }
+    .logo-text { font-family: var(--font-display); font-size: 1.35rem; color: var(--forest); letter-spacing: -0.02em; }
+    .logo-text span { display: block; font-family: var(--font-body); font-size: 0.6rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.2em; color: var(--bark-light); margin-top: -2px; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--charcoal); font-size: 0.88rem; font-weight: 500; }
+    .nav-cta { background: var(--forest) !important; color: var(--cream) !important; padding: 10px 24px; border-radius: 6px; font-weight: 600 !important; }
+    .page-hero { background: linear-gradient(165deg, rgba(45,74,62,0.88) 0%, rgba(26,58,46,0.82) 40%, rgba(42,63,53,0.78) 100%), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_46mx0l46mx0l46mx.png-v0yGrsLID68Beksd72qwiI3C9vTuZF.jpeg') center/cover no-repeat; padding: 140px 32px 80px; position: relative; overflow: hidden; }
+    .page-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse at 20% 80%, rgba(122,158,126,0.15) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(200,169,110,0.1) 0%, transparent 50%); }
+    .page-hero-inner { max-width: 1280px; margin: 0 auto; position: relative; z-index: 2; }
+    .breadcrumb { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+    .breadcrumb a { color: var(--sage-light); text-decoration: none; }
+    .page-hero h1 { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.5rem); color: var(--cream); line-height: 1.1; margin-bottom: 16px; max-width: 700px; }
+    .page-hero p { font-size: 1.1rem; color: rgba(255,255,255,0.6); max-width: 600px; line-height: 1.7; font-weight: 300; }
+    .content { max-width: 900px; margin: 0 auto; padding: 64px 32px; }
+    .content h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--forest); margin: 48px 0 16px; letter-spacing: -0.01em; }
+    .content h2:first-child { margin-top: 0; }
+    .content h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--forest); margin: 32px 0 12px; }
+    .content p { font-size: 1rem; color: var(--bark-light); line-height: 1.8; margin-bottom: 16px; }
+    .content ul { margin: 16px 0 24px 24px; }
+    .content li { font-size: 0.95rem; color: var(--bark-light); line-height: 1.7; margin-bottom: 8px; }
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 32px 0; }
+    .info-card { background: var(--cream); border-radius: 12px; padding: 24px; text-align: center; }
+    .info-card h4 { font-family: var(--font-display); font-size: 1.5rem; color: var(--gold); margin-bottom: 4px; }
+    .info-card p { font-size: 0.8rem; color: var(--bark-light); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; margin: 0; }
+    .hours-table { width: 100%; border-collapse: collapse; margin: 16px 0 32px; }
+    .hours-table td { padding: 10px 16px; font-size: 0.92rem; color: var(--bark-light); border-bottom: 1px solid rgba(45,74,62,0.08); }
+    .hours-table td:first-child { font-weight: 600; color: var(--forest); width: 140px; }
+    .hours-closed { color: var(--rust) !important; font-style: italic; }
+    .cta-banner { background: var(--forest); border-radius: 16px; padding: 48px 32px; text-align: center; margin: 48px 0; }
+    .cta-banner h3 { font-family: var(--font-display); font-size: 1.5rem; color: var(--cream); margin-bottom: 8px; }
+    .cta-banner p { color: rgba(255,255,255,0.6); margin-bottom: 20px; }
+    .cta-banner a { display: inline-block; background: var(--gold); color: var(--charcoal); padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    .other-shops { margin: 48px 0; }
+    .other-shops h2 { margin-bottom: 24px; }
+    .shop-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .shop-link { display: block; background: var(--cream); border-radius: 10px; padding: 16px 20px; text-decoration: none; color: var(--forest); font-weight: 500; font-size: 0.92rem; transition: background 0.2s, transform 0.2s; }
+    .shop-link:hover { background: var(--gold-light); transform: translateY(-1px); }
+    .shop-link small { display: block; color: var(--bark-light); font-weight: 300; font-size: 0.8rem; margin-top: 2px; }
+    footer { background: var(--charcoal); padding: 48px 32px; text-align: center; }
+    footer p { font-size: 0.8rem; color: rgba(255,255,255,0.3); }
+    footer a { color: var(--sage-light); text-decoration: none; }
+    @media (max-width: 768px) { .nav-links { display: none; } .content { padding: 48px 20px; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z"/></svg></div>
+        <div class="logo-text">Boulder Street<span>Jonathan Dickey &bull; Woodland Park</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html#areas">Areas</a></li>
+        <li><a href="../index.html#trails">Trails</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+        <li><a href="tel:4055887650" class="nav-cta">Call (405) 588-7650</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#areas">Community</a> / Model Citizen Coffee</div>
+      <h1>Model Citizen Coffee</h1>
+      <p>Woodland Park's artisan coffee roaster and tasting room, bringing European-style espresso, daily coffee flights, and a true passion for the craft to Midland Avenue.</p>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <h2>About Model Citizen Coffee</h2>
+    <p>Model Citizen Coffee is not just another coffee shop. Opened by Enrique and Tabitha, who developed their roasting expertise in Hawaii, this is a craft roastery and tasting room that approaches coffee with the same care and intention that a winemaker brings to a vineyard. They source, roast, and serve every bean themselves, and the result is some of the best espresso you will find anywhere along the Front Range.</p>
+    <p>The space on West Midland Avenue is designed to feel like a European coffee house: warm, inviting, high-end without being pretentious. It is the kind of place where the owners know your name, the conversation runs deep, and you leave feeling like you learned something new about the coffee you have been drinking your entire life.</p>
+
+    <div class="info-grid">
+      <div class="info-card"><h4>214 W Midland</h4><p>Address</p></div>
+      <div class="info-card"><h4>Roaster</h4><p>In-House Roasting</p></div>
+      <div class="info-card"><h4>5 Stars</h4><p>119 Reviews</p></div>
+      <div class="info-card"><h4>Coffee Flights</h4><p>Daily Tastings</p></div>
+    </div>
+
+    <h2>Hours</h2>
+    <table class="hours-table">
+      <tr><td>Monday</td><td class="hours-closed">Closed</td></tr>
+      <tr><td>Tuesday</td><td>9:00 AM - 5:00 PM</td></tr>
+      <tr><td>Wednesday</td><td>9:00 AM - 5:00 PM</td></tr>
+      <tr><td>Thursday</td><td>9:00 AM - 5:00 PM</td></tr>
+      <tr><td>Friday</td><td>9:00 AM - 5:00 PM</td></tr>
+      <tr><td>Saturday</td><td>9:00 AM - 5:00 PM</td></tr>
+      <tr><td>Sunday</td><td class="hours-closed">Closed</td></tr>
+    </table>
+
+    <h2>What Makes It Special</h2>
+    <p>The coffee flights are the signature experience at Model Citizen. Each day the shop offers three different coffees for side-by-side tasting, allowing you to explore how origin, altitude, and roast profile affect flavor. It is educational, fun, and genuinely eye-opening, even for experienced coffee drinkers. Reviewers consistently describe it as one of the most enriching coffee experiences they have ever had.</p>
+    <p>The espresso program is exceptional. Shots are pulled with precision, and the decaf is so well-roasted that customers say they cannot tell it apart from the caffeinated version. Tabitha also bakes butter cookies and gluten-free treats in house, and the shop carries a selection of premium teas including a standout jasmine blend.</p>
+    <p>Model Citizen also offers coffee classes and roasting education for anyone who wants to go deeper into the craft. It is not just a place to buy coffee; it is a place to understand it.</p>
+
+    <h3>What to Try</h3>
+    <ul>
+      <li>Daily coffee flights with three rotating single-origin selections</li>
+      <li>European-style espresso and cappuccinos</li>
+      <li>The Nat/Nat blend (half decaf, remarkably smooth)</li>
+      <li>Tabitha's house-baked butter cookies and gluten-free treats</li>
+      <li>Jasmine tea and specialty tea selections</li>
+      <li>Fresh-roasted beans to take home by the bag</li>
+    </ul>
+
+    <h2>Address &amp; Directions</h2>
+    <p>Model Citizen Coffee is located at <strong>214 W Midland Ave, Woodland Park, CO 80863</strong>. It sits on the main downtown strip with street parking along Midland Avenue. Phone: <a href="tel:7199203174" style="color: var(--gold);">(719) 920-3174</a>.</p>
+
+    <h2>Living Near Model Citizen Coffee</h2>
+    <p>Model Citizen sits in the heart of Woodland Park's downtown corridor, surrounded by neighborhoods that offer the best of mountain-town convenience. Walking-distance homes in Woodland Heights and the Midland Area range from renovated cottages to spacious family properties, many with Pikes Peak views. The downtown location means you are close to restaurants, the weekly farmers market, and community events that give Woodland Park its strong sense of place.</p>
+    <p>For coffee lovers who want their daily ritual to be a five-minute walk rather than a twenty-minute drive, this stretch of Midland Avenue is one of the best places to own a home in the entire Ute Pass corridor.</p>
+
+    <div class="cta-banner">
+      <h3>Make Midland Avenue Your Neighborhood</h3>
+      <p>Explore homes within walking distance of Woodland Park's best coffee.</p>
+      <a href="../index.html#areas">Search Homes Nearby</a>
+    </div>
+
+    <div class="other-shops">
+      <h2>More Coffee Shops in Woodland Park</h2>
+      <div class="shop-links">
+        <a class="shop-link" href="java-haus.html">Java Haus<small>116 W Midland Ave</small></a>
+        <a class="shop-link" href="solid-grounds.html">Solid Grounds Coffee Roasters<small>108 N Park St</small></a>
+        <a class="shop-link" href="cafe-leo.html">Cafe Leo<small>320 W Midland Ave</small></a>
+        <a class="shop-link" href="gold-hill-java.html">Gold Hill Java<small>320 W Midland Ave</small></a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Jonathan Dickey, Boulder Street Real Estate. Brokered by Real Broker, LLC. &bull; <a href="../index.html">Home</a> &bull; Woodland Park, CO 80863 &bull; <a href="tel:4055887650">(405) 588-7650</a></p>
+  </footer>
+</body>
+</html>
