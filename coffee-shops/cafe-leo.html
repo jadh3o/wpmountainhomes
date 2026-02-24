@@ -16,7 +16,9 @@
       { "@type": "Question", "name": "What is Cafe Leo known for in Woodland Park?", "acceptedAnswer": { "@type": "Answer", "text": "Cafe Leo is a Norwegian-owned European-inspired cafe and bakery at 320 W Midland Ave in Woodland Park, CO. They are known for authentic Norwegian Sweet Buns, the spicy avo bagel, pesto turkey sandwich, and mountain views from the seating area." } },
       { "@type": "Question", "name": "What are the hours for Cafe Leo in Woodland Park?", "acceptedAnswer": { "@type": "Answer", "text": "Cafe Leo is open 6AM to 8PM every day of the week, making it one of the earliest and latest coffee shop options in Woodland Park, CO." } },
       { "@type": "Question", "name": "Does Cafe Leo have good food or just coffee?", "acceptedAnswer": { "@type": "Answer", "text": "Cafe Leo has an extensive food menu alongside their coffee and tea. The spicy avo bagel and pesto turkey sandwich are local favorites, plus fresh-baked pastries and authentic Norwegian Sweet Buns made from traditional recipes." } },
-      { "@type": "Question", "name": "Is Cafe Leo a good coffee shop for breakfast in Woodland Park?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Cafe Leo opens at 6AM daily with fresh pastries, Norwegian Sweet Buns, bagels, and a full coffee and tea menu. It is one of the earliest-opening coffee shops in Woodland Park, CO." } }
+      { "@type": "Question", "name": "Is Cafe Leo a good coffee shop for breakfast in Woodland Park?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Cafe Leo opens at 6AM daily with fresh pastries, Norwegian Sweet Buns, bagels, and a full coffee and tea menu. It is one of the earliest-opening coffee shops in Woodland Park, CO." } },
+      { "@type": "Question", "name": "What are the best coffee shops in Woodland Park, CO?", "acceptedAnswer": { "@type": "Answer", "text": "The best coffee shops in Woodland Park include Cafe Leo (4.6 stars, 1,020 reviews), Solid Grounds Coffee Roasters (4.9 stars), Java Haus (4.8 stars), and the Starbucks on Highway 24 with panoramic Pikes Peak views. Cafe Leo is the most reviewed and has the longest hours." } },
+      { "@type": "Question", "name": "What is Woodland Park, CO known for?", "acceptedAnswer": { "@type": "Answer", "text": "Woodland Park is known as the City Above the Clouds at 8,465 feet elevation, with direct Pikes Peak views, world-class hiking trails, a thriving local coffee and restaurant scene, and a welcoming small-town community just 25 minutes from Colorado Springs." } }
     ]
   }
   </script>
@@ -132,6 +134,15 @@
     .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;font-family:var(--font-body);font-size:0.82rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border-radius:8px;border:none;cursor:pointer;transition:all 0.3s}
     .btn-primary{background:var(--gold);color:var(--warm-white)}
     .btn-primary:hover{background:#b8994e;transform:translateY(-2px)}
+
+    /* FAQ */
+    .faq-section{padding:80px 40px;background:var(--warm-white)}
+    .faq-inner{max-width:720px;margin:0 auto}
+    .faq-inner h2{font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2rem);color:var(--forest);margin-bottom:32px;text-align:center}
+    .faq-item{border-bottom:1px solid rgba(45,74,62,0.1);padding:20px 0}
+    .faq-item:first-of-type{border-top:1px solid rgba(45,74,62,0.1)}
+    .faq-q{font-family:var(--font-body);font-weight:600;font-size:1rem;color:var(--forest);margin-bottom:8px}
+    .faq-a{font-size:0.9rem;color:var(--bark-light);line-height:1.7;font-weight:300}
 
     /* Cross-links */
     .cross-links{padding:60px 40px;background:var(--cream);text-align:center}
@@ -356,6 +367,43 @@
         <a href="/tamarac" class="cross-link">Tamarac</a>
         <a href="/paradise-estates" class="cross-link">Paradise Estates</a>
         <a href="/midland-area" class="cross-link">Midland Area</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="faq-inner">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">What is Cafe Leo known for in Woodland Park?</div>
+        <div class="faq-a">Cafe Leo is a Norwegian-owned European-inspired cafe and bakery at 320 W Midland Ave in Woodland Park, CO. They are known for authentic Norwegian Sweet Buns, the spicy avo bagel, pesto turkey sandwich, and mountain views from the seating area.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What are the hours for Cafe Leo in Woodland Park?</div>
+        <div class="faq-a">Cafe Leo is open 6AM to 8PM every day of the week, making it one of the earliest and latest coffee shop options in Woodland Park, CO.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Does Cafe Leo have good food or just coffee?</div>
+        <div class="faq-a">Cafe Leo has an extensive food menu alongside their coffee and tea. The spicy avo bagel and pesto turkey sandwich are local favorites, plus fresh-baked pastries and authentic Norwegian Sweet Buns made from traditional recipes.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Is Cafe Leo a good coffee shop for breakfast in Woodland Park?</div>
+        <div class="faq-a">Yes. Cafe Leo opens at 6AM daily with fresh pastries, Norwegian Sweet Buns, bagels, and a full coffee and tea menu. It is one of the earliest-opening coffee shops in Woodland Park, CO.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What are the best coffee shops in Woodland Park, CO?</div>
+        <div class="faq-a">The best coffee shops in Woodland Park include Cafe Leo (4.6 stars, 1,020 reviews), Solid Grounds Coffee Roasters (4.9 stars), Java Haus (4.8 stars), and the Starbucks on Highway 24 with panoramic Pikes Peak views. Cafe Leo is the most reviewed and has the longest hours.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What is Woodland Park, CO known for?</div>
+        <div class="faq-a">Woodland Park is known as the "City Above the Clouds" at 8,465 feet elevation, with direct Pikes Peak views, world-class hiking trails, a thriving local coffee and restaurant scene, and a welcoming small-town community just 25 minutes from Colorado Springs.</div>
       </div>
     </div>
   </section>
